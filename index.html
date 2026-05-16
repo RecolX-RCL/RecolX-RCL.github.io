@@ -47,6 +47,276 @@
         ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--secondary); }
 
+        /* ====== PROMO BANNER ====== */
+        .promo-banner {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 20px;
+            padding: 0 24px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .promo-banner.hidden {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+        }
+
+        .promo-banner-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 20px 50px 20px 24px;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 255, 0.1), rgba(168, 85, 247, 0.08));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 20px;
+            min-height: 70px;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .promo-banner-inner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 200%; height: 100%;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(0, 255, 136, 0.06) 25%,
+                rgba(0, 204, 255, 0.06) 50%,
+                rgba(168, 85, 247, 0.04) 75%,
+                transparent 100%
+            );
+            animation: promoShimmer 6s linear infinite;
+        }
+
+        @keyframes promoShimmer {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50%); }
+        }
+
+        .promo-banner-inner::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--purple), var(--primary));
+            background-size: 200% 100%;
+            animation: promoGradient 3s linear infinite;
+        }
+
+        @keyframes promoGradient {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        .promo-icon-wrap {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .promo-icon {
+            width: 42px; height: 42px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: var(--bg);
+            animation: promoIconPulse 2s ease-in-out infinite;
+            box-shadow: 0 0 16px rgba(0, 255, 136, 0.3);
+        }
+
+        @keyframes promoIconPulse {
+            0%, 100% { box-shadow: 0 0 16px rgba(0, 255, 136, 0.3); transform: scale(1); }
+            50% { box-shadow: 0 0 24px rgba(0, 255, 136, 0.5); transform: scale(1.05); }
+        }
+
+        .promo-fire {
+            font-size: 1.3rem;
+            animation: promoFire 0.8s ease-in-out infinite alternate;
+        }
+
+        @keyframes promoFire {
+            0% { transform: scale(1) rotate(-5deg); }
+            100% { transform: scale(1.15) rotate(5deg); }
+        }
+
+        .promo-text-wrap {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .promo-text {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+        }
+
+        .promo-text .highlight {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+
+        .promo-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            background: rgba(255, 45, 117, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(255, 45, 117, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            animation: promoTagPulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes promoTagPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .promo-cta {
+            position: relative;
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            border-radius: 12px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: var(--bg);
+            font-weight: 700;
+            font-size: 0.88rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+        }
+
+        .promo-cta:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 4px 28px rgba(0, 255, 136, 0.4);
+        }
+
+        .promo-cta i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .promo-cta:hover i {
+            transform: translateX(3px);
+        }
+
+        [dir="rtl"] .promo-cta:hover i {
+            transform: translateX(-3px);
+        }
+
+        .promo-close {
+            position: absolute;
+            top: 10px; right: 12px;
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            z-index: 3;
+        }
+
+        [dir="rtl"] .promo-close {
+            right: auto;
+            left: 12px;
+        }
+
+        .promo-close:hover {
+            background: rgba(255, 45, 117, 0.2);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Promo Banner - Mobile */
+        @media (max-width: 768px) {
+            .promo-banner-inner {
+                padding: 16px 40px 16px 14px;
+                gap: 10px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            [dir="rtl"] .promo-banner-inner {
+                padding: 16px 14px 16px 40px;
+            }
+
+            .promo-icon-wrap {
+                gap: 6px;
+            }
+
+            .promo-icon {
+                width: 36px; height: 36px;
+                font-size: 0.9rem;
+            }
+
+            .promo-fire {
+                font-size: 1.1rem;
+            }
+
+            .promo-text {
+                font-size: 0.85rem;
+            }
+
+            .promo-cta {
+                padding: 8px 18px;
+                font-size: 0.8rem;
+            }
+
+            .promo-close {
+                width: 24px; height: 24px;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .promo-text-wrap {
+                justify-content: center;
+            }
+
+            .promo-tag {
+                font-size: 0.6rem;
+                padding: 2px 8px;
+            }
+        }
+
         /* ====== PARTICLES ====== */
         #particles-container {
             position: fixed;
@@ -1546,6 +1816,27 @@
     </div>
 </section>
 
+<!-- PROMO BANNER - RecolX Store -->
+<div class="promo-banner" id="promoBanner">
+    <div class="promo-banner-inner">
+        <div class="promo-icon-wrap">
+            <span class="promo-fire">🔥</span>
+            <div class="promo-icon">
+                <i class="fas fa-store"></i>
+            </div>
+        </div>
+        <div class="promo-text-wrap">
+            <span class="promo-text" data-i18n="promo.text">Top up your games & apps at <span class="highlight">RecolX Store</span></span>
+            <span class="promo-tag" data-i18n="promo.tag">HOT OFFER</span>
+        </div>
+        <a href="https://recolx-rcl.github.io/RecolX-Store/" target="_blank" rel="noopener" class="promo-cta">
+            <span data-i18n="promo.btn">Visit Store</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="promo-close" onclick="closePromo()" aria-label="Close banner">&times;</button>
+    </div>
+</div>
+
 <!-- FEATURES -->
 <section class="section" id="features">
     <div class="section-inner">
@@ -2140,6 +2431,9 @@
 // ====== TRANSLATIONS ======
 const translations = {
     en: {
+        'promo.text': 'Top up your games & apps at <span class="highlight">RecolX Store</span>',
+        'promo.tag': 'HOT OFFER',
+        'promo.btn': 'Visit Store',
         'nav.home': 'Home',
         'nav.features': 'Features',
         'nav.profiles': 'Game Profiles',
@@ -2302,6 +2596,9 @@ const translations = {
         'modal.totalPrice': 'Total Price'
     },
     ar: {
+        'promo.text': 'شحن ألعابك وتطبيقاتك من <span class="highlight">متجر RecolX</span>',
+        'promo.tag': 'عرض حار',
+        'promo.btn': 'زيارة المتجر',
         'nav.home': 'الرئيسية',
         'nav.features': 'المميزات',
         'nav.profiles': 'ملفات الألعاب',
@@ -2478,6 +2775,22 @@ const programPrices = {
     p8: { name: 'Windows Command Center Pro Lifetime', base: 25, lifetime: true }
 };
 
+// ====== PROMO BANNER CLOSE ======
+function closePromo() {
+    const banner = document.getElementById('promoBanner');
+    banner.classList.add('hidden');
+    // Save dismiss state
+    try { localStorage.setItem('promoBannerDismissed', 'true'); } catch(e) {}
+}
+
+function checkPromoBanner() {
+    try {
+        if (localStorage.getItem('promoBannerDismissed') === 'true') {
+            document.getElementById('promoBanner').classList.add('hidden');
+        }
+    } catch(e) {}
+}
+
 // ====== LANGUAGE SWITCHING ======
 function switchLang(lang) {
     currentLang = lang;
@@ -2495,6 +2808,16 @@ function switchLang(lang) {
             el.innerHTML = translations[lang][key];
         }
     });
+
+    // Update promo CTA arrow direction for RTL
+    const promoArrow = document.querySelector('.promo-cta i.fa-arrow-right');
+    if (promoArrow) {
+        if (lang === 'ar') {
+            promoArrow.className = 'fas fa-arrow-left';
+        } else {
+            promoArrow.className = 'fas fa-arrow-right';
+        }
+    }
 }
 
 // ====== MOBILE MENU ======
@@ -2695,6 +3018,7 @@ function updateActiveNav() {
 
 // ====== INIT ======
 document.addEventListener('DOMContentLoaded', () => {
+    checkPromoBanner();
     createParticles();
     animateCounters();
     updateActiveNav();
