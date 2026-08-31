@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecolX Pro - RecoilX</title>
-    <meta name="description" content="RecolX Pro — lightweight essential recoil control with grenade detection, statistics tracking and 5 game profiles. Only $10/month for competitive FPS gamers.">
+    <title>Windows Command Center Pro - RecoilX</title>
+    <meta name="description" content="Windows Command Center Pro — 140+ Windows commands in 13 categories with smart search, favorites, 4 professional themes, a live console and bilingual Arabic/English interface. $3/month or $25 lifetime license.">
     <meta name="theme-color" content="#0a0a0f">
-    <link rel="canonical" href="https://recolx-rcl.github.io/recolx-pro.html">
+    <link rel="canonical" href="https://recolx-rcl.github.io/wincmd-pro.html">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="RecoilX">
-    <meta property="og:title" content="RecolX Pro — RecoilX">
-    <meta property="og:description" content="RecolX Pro — lightweight essential recoil control with grenade detection, statistics tracking and 5 game profiles. Only $10/month for competitive FPS gamers.">
-    <meta property="og:url" content="https://recolx-rcl.github.io/recolx-pro.html">
-    <meta property="og:image" content="https://recolx-rcl.github.io/images/recolx-pro.png">
+    <meta property="og:title" content="Windows Command Center Pro — RecoilX">
+    <meta property="og:description" content="140+ Windows commands in 13 categories with smart search, favorites, 4 professional themes, a live console and bilingual interface. $3/month or $25 lifetime.">
+    <meta property="og:url" content="https://recolx-rcl.github.io/wincmd-pro.html">
+    <meta property="og:image" content="https://recolx-rcl.github.io/images/wincmd-pro.png">
     <meta property="og:image:width" content="1344">
     <meta property="og:image:height" content="768">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="RecolX Pro — RecoilX">
-    <meta name="twitter:description" content="RecolX Pro — lightweight essential recoil control with grenade detection, statistics tracking and 5 game profiles. Only $10/month for competitive FPS gamers.">
-    <meta name="twitter:image" content="https://recolx-rcl.github.io/images/recolx-pro.png">
+    <meta name="twitter:title" content="Windows Command Center Pro — RecoilX">
+    <meta name="twitter:description" content="140+ Windows commands in 13 categories with smart search, favorites, 4 professional themes, a live console and bilingual interface. $3/month or $25 lifetime.">
+    <meta name="twitter:image" content="https://recolx-rcl.github.io/images/wincmd-pro.png">
 
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preload" as="image" href="images/recolx-pro.png">
+    <link rel="preload" as="image" href="images/wincmd-pro.png">
     <link rel="apple-touch-icon" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://i.ytimg.com">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "RecolX Pro",
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "Windows",
-  "description": "RecolX Pro — lightweight essential recoil control with grenade detection, statistics tracking and 5 game profiles. Only $10/month for competitive FPS gamers.",
-  "url": "https://recolx-rcl.github.io/recolx-pro.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "10",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://recolx-rcl.github.io/recolx-pro.html"
-  },
+  "name": "Windows Command Center Pro",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "description": "140+ Windows commands in 13 categories with smart search, favorites, 4 professional themes, a live console and bilingual Arabic/English interface.",
+  "url": "https://recolx-rcl.github.io/wincmd-pro.html",
+  "offers": [
+    {
+      "@type": "Offer", "price": "3", "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://recolx-rcl.github.io/wincmd-pro.html",
+      "name": "Monthly Plan"
+    },
+    {
+      "@type": "Offer", "price": "25", "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://recolx-rcl.github.io/wincmd-pro.html",
+      "name": "Lifetime License"
+    }
+  ],
   "author": {
     "@type": "Organization",
     "name": "RecoilX",
@@ -180,6 +186,16 @@
         @media(max-width:768px){.nav-links,.lang-switcher,.btn-cta.header-cta{display:none}.hamburger{display:flex}.hero-buttons{flex-direction:column;align-items:center}.btn-hero{width:100%;max-width:300px;justify-content:center}.footer-grid{grid-template-columns:1fr;gap:28px}.features-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}}
         @media(max-width:480px){.section{padding:60px 16px}.hero{padding:100px 16px 60px}}
     
+        /* dual pricing */
+        .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:940px;margin:0 auto}
+        .pricing-card.gold{border-color:rgba(255,215,0,.35);position:relative}
+        .pricing-card.gold:hover{border-color:var(--gold);box-shadow:0 0 40px rgba(255,215,0,.12)}
+        .price-tag{display:inline-block;padding:6px 16px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:.5px;margin-bottom:12px}
+        .price-tag.monthly{background:rgba(0,204,255,.12);color:var(--secondary);border:1px solid rgba(0,204,255,.3)}
+        .price-tag.lifetime{background:rgba(255,215,0,.1);color:var(--gold);border:1px solid rgba(255,215,0,.3)}
+        .pricing-card .plain-price{font-size:3.5rem;font-weight:800;color:var(--gold);margin:16px 0}
+        @media(max-width:768px){.pricing-grid{grid-template-columns:1fr}}
+    
         /* ===== v2: program card media ===== */
         .program-card-media{margin:-28px -28px 20px;border-radius:19px 19px 0 0;overflow:hidden;position:relative;border-bottom:1px solid var(--border);background:var(--bg)}
         .program-card-media img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .5s ease}
@@ -224,49 +240,66 @@
     <div style="display:flex;gap:8px;margin-top:16px;"><button class="lang-btn active" data-lang="en" onclick="switchLang('en');closeMobile();" style="padding:12px 24px;font-size:1rem;">EN</button><button class="lang-btn" data-lang="ar" onclick="switchLang('ar');closeMobile();" style="padding:12px 24px;font-size:1rem;">AR</button></div>
 </div>
 <section class="hero"><div class="hero-bg"></div><div class="hero-content">
-    <div class="hero-badge" data-aos="fade-down" data-aos-delay="200"><span class="pulse-dot"></span><span data-i18n="hero.badge">Most Popular</span></div>
-    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300" data-i18n="hero.title">RecolX Pro</h1>
-    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400" data-i18n="hero.subtitle">The essential recoil control solution for competitive gamers. Reliable, lightweight, and effective with all the core features you need.</p>
+    <div class="hero-badge" data-aos="fade-down" data-aos-delay="200"><span class="pulse-dot"></span><span data-i18n="hero.badge">NEW RELEASE</span></div>
+    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300" data-i18n="hero.title">Windows Command Center Pro</h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400" data-i18n="hero.subtitle">The essential toolbox for every Windows user — 140+ commands across 13 categories with smart search, favorites, professional themes and a live console. Stop memorizing commands.</p>
     <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
-        <a href="#pricing" class="btn-hero btn-hero-primary"><i class="fas fa-download"></i><span data-i18n="hero.btn.download">Download Now</span></a>
+        <a href="#pricing" class="btn-hero btn-hero-primary"><i class="fas fa-terminal"></i><span data-i18n="hero.btn.get">Get It Now</span></a>
         <a href="index.html" class="btn-hero btn-hero-secondary"><i class="fas fa-arrow-left"></i><span data-i18n="hero.btn.backHome">Back to Home</span></a>
     </div>
 </div>
     <div class="hero-media">
     <div class="safety-strip" data-aos="fade-up" data-aos-delay="550"><i class="fas fa-shield-halved"></i><span data-i18n="safety.strip">100% Safe — No game files touched · No file injection · No spyware</span></div>
-    <div class="hero-visual" data-aos="zoom-in" data-aos-delay="650"><img src="images/recolx-pro.png" alt="RecolX Pro"></div>
+    <div class="hero-visual" data-aos="zoom-in" data-aos-delay="650"><img src="images/wincmd-pro.png" alt="Windows Command Center Pro"></div>
     </div>
 </section>
 <section class="section" id="features"><div class="section-inner">
     <h2 class="section-title" data-aos="fade-up" data-i18n="features.title">Core Features</h2><div class="gradient-line" data-aos="fade-up"></div>
-    <p class="section-subtitle" data-aos="fade-up" data-i18n="features.subtitle">Essential features for reliable recoil control</p>
+    <p class="section-subtitle" data-i18n="features.subtitle">Everything you need to master Windows commands</p>
     <div class="features-grid">
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="100"><div class="feature-icon"><i class="fas fa-crosshairs"></i></div><h3 data-i18n="features.f1.title">Advanced Recoil Control</h3><p data-i18n="features.f1.desc">Powerful recoil compensation system that works across all supported games. Smooth, natural-feeling adjustments that keep you on target during firefights.</p></div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="200"><div class="feature-icon"><i class="fas fa-bomb"></i></div><h3 data-i18n="features.f2.title">Grenade Detection Feature</h3><p data-i18n="features.f2.desc">Smart detection system automatically pauses compensation when throwing grenades. Seamlessly resumes when switching back to your weapon.</p></div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="300"><div class="feature-icon"><i class="fas fa-chart-bar"></i></div><h3 data-i18n="features.f3.title">Basic Statistics Tracking</h3><p data-i18n="features.f3.desc">Track your performance with built-in statistics. Monitor usage patterns, session times, and improvement metrics over time.</p></div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="400"><div class="feature-icon"><i class="fas fa-gamepad"></i></div><h3 data-i18n="features.f4.title">5 Game Profiles</h3><p data-i18n="features.f4.desc">Save up to 5 different game configurations. Each profile stores your preferred settings for quick switching between games.</p></div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100"><div class="feature-icon"><i class="fas fa-terminal"></i></div><h3 data-i18n="features.f1.title">140+ Commands, 13 Categories</h3><p data-i18n="features.f1.desc">A complete, organized library covering network, system, disk, security, diagnostics and more. Always find the right command for the job.</p></div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200"><div class="feature-icon"><i class="fas fa-magnifying-glass"></i></div><h3 data-i18n="features.f2.title">Smart Search & Filters</h3><p data-i18n="features.f2.desc">Find any command in seconds with instant search and advanced category filters. No more scrolling through endless documentation.</p></div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300"><div class="feature-icon"><i class="fas fa-star"></i></div><h3 data-i18n="features.f3.title">Favorites & History</h3><p data-i18n="features.f3.desc">Star your most-used commands for one-click access, and revisit your full execution history anytime. Export commands and history when needed.</p></div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400"><div class="feature-icon"><i class="fas fa-palette"></i></div><h3 data-i18n="features.f4.title">4 Themes + Live Console</h3><p data-i18n="features.f4.desc">Professional themes to match your style, plus a live console with dynamic command building and admin execution. Bilingual interface: Arabic & English.</p></div>
     </div>
 </div></section>
 <section class="section" id="how-it-works"><div class="section-inner">
     <h2 class="section-title" data-aos="fade-up" data-i18n="howItWorks.title">How It Works</h2><div class="gradient-line" data-aos="fade-up"></div>
-    <p class="section-subtitle" data-aos="fade-up" data-i18n="howItWorks.subtitle">Get started in 4 simple steps</p>
+    <p class="section-subtitle" data-i18n="howItWorks.subtitle">Get started in 4 simple steps</p>
     <div class="steps-grid">
-        <div class="step-card" data-aos="fade-up" data-aos-delay="100"><div class="step-num">1</div><h3 data-i18n="howItWorks.step1.title">Download & Install</h3><p data-i18n="howItWorks.step1.desc">Download RecolX Pro and run the installer. Lightweight setup under 1 minute.</p></div>
-        <div class="step-card" data-aos="fade-up" data-aos-delay="200"><div class="step-num">2</div><h3 data-i18n="howItWorks.step2.title">Choose Your Game Profile</h3><p data-i18n="howItWorks.step2.desc">Pick from 5 pre-configured profiles or create your own.</p></div>
-        <div class="step-card" data-aos="fade-up" data-aos-delay="300"><div class="step-num">3</div><h3 data-i18n="howItWorks.step3.title">Configure Settings</h3><p data-i18n="howItWorks.step3.desc">Adjust recoil compensation and grenade detection settings.</p></div>
-        <div class="step-card" data-aos="fade-up" data-aos-delay="400"><div class="step-num">4</div><h3 data-i18n="howItWorks.step4.title">Start Playing!</h3><p data-i18n="howItWorks.step4.desc">Launch your game and enjoy smooth, reliable recoil control.</p></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="100"><div class="step-num">1</div><h3 data-i18n="howItWorks.step1.title">Get Your License</h3><p data-i18n="howItWorks.step1.desc">Choose monthly or lifetime, contact us and receive your activation key.</p></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200"><div class="step-num">2</div><h3 data-i18n="howItWorks.step2.title">Browse or Search</h3><p data-i18n="howItWorks.step2.desc">Explore 13 organized categories or search instantly for the command you need.</p></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="300"><div class="step-num">3</div><h3 data-i18n="howItWorks.step3.title">Build & Run</h3><p data-i18n="howItWorks.step3.desc">Use dynamic command building and the live console, with admin execution support.</p></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="400"><div class="step-num">4</div><h3 data-i18n="howItWorks.step4.title">Save & Export</h3><p data-i18n="howItWorks.step4.desc">Star favorites, keep your history, and export commands for later use.</p></div>
     </div>
 </div></section>
 <section class="section" id="pricing"><div class="section-inner">
     <h2 class="section-title" data-aos="fade-up" data-i18n="pricing.title">Pricing</h2><div class="gradient-line" data-aos="fade-up"></div>
-    <p class="section-subtitle" data-aos="fade-up" data-i18n="pricing.subtitle">Affordable and reliable</p>
-    <div class="pricing-card" data-aos="fade-up">
-        <div style="color:var(--text-muted);font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;" data-i18n="pricing.label">RecolX Pro</div>
-        <div class="price-display">$<span id="priceDisplay">10</span></div>
-        <div class="price-period" data-i18n="pricing.perMonth">/month</div>
-        <div class="month-selector"><button class="month-btn" onclick="changeMonth(-1)">−</button><span class="month-label"><span id="monthDisplay">1</span> <span data-i18n="pricing.month">month(s)</span></span><button class="month-btn" onclick="changeMonth(1)">+</button></div>
-        <div class="pricing-total"><span data-i18n="pricing.total">Total</span><span>$<span id="totalDisplay">10</span></span></div>
-        <button class="btn-contact-big" onclick="openContact()"><i class="fas fa-paper-plane"></i><span data-i18n="pricing.btn">Contact Me to Order</span></button>
+    <p class="section-subtitle" data-i18n="pricing.subtitle">Simple plans for every user</p>
+    <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="price-tag monthly" data-i18n="pricing.tagMonthly">MONTHLY</span>
+            <div style="color:var(--text-muted);font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;" data-i18n="pricing.labelM">Windows Command Center Pro</div>
+            <div class="price-display">$<span id="priceDisplay">3</span></div>
+            <div class="price-period" data-i18n="pricing.perMonth">/month</div>
+            <div class="month-selector"><button class="month-btn" onclick="changeMonth(-1)">−</button><span class="month-label"><span id="monthDisplay">1</span> <span data-i18n="pricing.month">month(s)</span></span><button class="month-btn" onclick="changeMonth(1)">+</button></div>
+            <div class="pricing-total"><span data-i18n="pricing.total">Total</span><span>$<span id="totalDisplay">3</span></span></div>
+            <button class="btn-contact-big" onclick="openContact('monthly')"><i class="fas fa-paper-plane"></i><span data-i18n="pricing.btnM">Contact Me to Order</span></button>
+        </div>
+        <div class="pricing-card gold" data-aos="fade-up" data-aos-delay="200">
+            <span class="price-tag lifetime" data-i18n="pricing.tagLifetime">LIFETIME — BEST VALUE</span>
+            <div style="color:var(--text-muted);font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;" data-i18n="pricing.labelM">Windows Command Center Pro</div>
+            <div class="plain-price">$25</div>
+            <div class="price-period" data-i18n="pricing.oneTime">one-time payment</div>
+            <ul style="list-style:none;text-align:left;margin:20px 0;padding:0;">
+                <li style="padding:8px 0;color:var(--text-muted);font-size:.9rem;"><i class="fas fa-check" style="color:var(--gold);margin-right:10px;"></i><span data-i18n="pricing.lf1">Everything in Monthly Plan</span></li>
+                <li style="padding:8px 0;color:var(--text-muted);font-size:.9rem;"><i class="fas fa-check" style="color:var(--gold);margin-right:10px;"></i><span data-i18n="pricing.lf2">All 4 Themes Unlocked</span></li>
+                <li style="padding:8px 0;color:var(--text-muted);font-size:.9rem;"><i class="fas fa-check" style="color:var(--gold);margin-right:10px;"></i><span data-i18n="pricing.lf3">Priority Updates</span></li>
+                <li style="padding:8px 0;color:var(--text-muted);font-size:.9rem;"><i class="fas fa-check" style="color:var(--gold);margin-right:10px;"></i><span data-i18n="pricing.lf4">Hardware-Bound Activation</span></li>
+                <li style="padding:8px 0;color:var(--text-muted);font-size:.9rem;"><i class="fas fa-check" style="color:var(--gold);margin-right:10px;"></i><span data-i18n="pricing.lf5">RSA-2048 License Protection</span></li>
+            </ul>
+            <button class="btn-contact-big" style="background:linear-gradient(45deg,var(--gold),#ffec8a);" onclick="openContact('lifetime')"><i class="fas fa-crown"></i><span data-i18n="pricing.btnL">Get Lifetime License</span></button>
+        </div>
     </div>
 </div></section>
 
@@ -291,44 +324,44 @@
 <section class="section" id="faq"><div class="section-inner">
     <h2 class="section-title" data-aos="fade-up" data-i18n="faq.title">Frequently Asked Questions</h2><div class="gradient-line" data-aos="fade-up"></div>
     <div class="faq-list">
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q1">Is it safe to use?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a1">Yes, RecolX Pro uses advanced anti-detection technology to ensure complete safety. The lightweight design has minimal system footprint.</div></div></div>
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q2">Which games are supported?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a2">PUBG Steam, APEX Legends, Call of Duty, and more. 5 game profiles cover the most popular FPS titles.</div></div></div>
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="300"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q3">How do I get updates?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a3">Through our Telegram channel (@RecoIlX). Updates are included free with your subscription.</div></div></div>
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="400"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q4">What if I need help?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a4">Contact us via Telegram (@RecoIlX), Gmail (rclrecolx@gmail.com), or Facebook (/recolx).</div></div></div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q1">What is Windows Command Center Pro?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a1">A desktop tool that organizes 140+ Windows commands into 13 categories with instant search, favorites, command history, 4 professional themes and a live console — so you never have to memorize commands or search online again.</div></div></div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q2">Which Windows versions are supported?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a2">Windows 10 and Windows 11 (64-bit). The interface is bilingual — Arabic and English — and supports dynamic command building with admin execution.</div></div></div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q3">Monthly or Lifetime — which should I choose?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a3">Monthly costs $3/month and is great for trying it out. The Lifetime license is a one-time $25 payment, bound to your hardware, with all themes unlocked, priority updates and RSA-2048 license protection.</div></div></div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq.q4">How do I get it after payment?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a4">Contact us via Telegram (@RecoIlX) or Gmail (rclrecolx@gmail.com). We usually reply within a few hours with your license key, download link and activation help.</div></div></div>
     </div>
 </div></section>
 <footer class="footer"><div class="footer-inner"><div class="footer-grid">
-    <div class="footer-col"><h4><span style="background:linear-gradient(45deg,#00ff88,#00ccff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:800;"><i class="fas fa-bolt" style="-webkit-text-fill-color:#00ff88;"></i> RecoilX</span></h4><p data-i18n="footer.about">The most advanced recoil control & detection system for competitive gamers.</p><div class="social-links"><a href="https://www.youtube.com/@recolxx" target="_blank" rel="noopener" class="social-link"><i class="fab fa-youtube"></i></a><a href="https://t.me/RecoIlX" target="_blank" rel="noopener" class="social-link"><i class="fab fa-telegram"></i></a><a href="https://www.facebook.com/recolx" target="_blank" rel="noopener" class="social-link"><i class="fab fa-facebook-f"></i></a></div></div>
-    <div class="footer-col"><h4>Programs</h4><ul><li><a href="rcl-scope-pro.html">RCL Scope PRO</a></li><li><a href="rcl-scope-ultimate.html">RCL Scope ULTIMATE</a></li><li><a href="recolx-pro.html">RecolX Pro</a></li><li><a href="rcl-v9.html">RCL.V9</a></li><li><a href="rcl-system-monster.html">System Monster</a></li><li><a href="bundle.html">Bundle</a></li></ul></div>
-    <div class="footer-col"><h4>Support</h4><ul><li><a href="https://t.me/RecolXx" target="_blank" rel="noopener">Updates Channel</a></li><li><a href="index.html#videos">Video Tutorials</a></li></ul></div>
+    <div class="footer-col"><h4><span style="background:linear-gradient(45deg,#00ff88,#00ccff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:800;"><i class="fas fa-bolt" style="-webkit-text-fill-color:#00ff88;"></i> RecoilX</span></h4><p data-i18n="footer.about">Professional gaming tools and Windows utilities from the RecoilX team.</p><div class="social-links"><a href="https://www.youtube.com/@recolxx" target="_blank" rel="noopener" class="social-link"><i class="fab fa-youtube"></i></a><a href="https://t.me/RecoIlX" target="_blank" rel="noopener" class="social-link"><i class="fab fa-telegram"></i></a><a href="https://www.facebook.com/recolx" target="_blank" rel="noopener" class="social-link"><i class="fab fa-facebook-f"></i></a></div></div>
+    <div class="footer-col"><h4>Programs</h4><ul><li><a href="rcl-scope-pro.html">RCL Scope PRO</a></li><li><a href="rcl-scope-ultimate.html">RCL Scope ULTIMATE</a></li><li><a href="recolx-pro.html">RecolX Pro</a></li><li><a href="rcl-v9.html">RCL.V9</a></li><li><a href="rcl-system-monster.html">System Monster</a></li><li><a href="bundle.html">Bundle</a></li><li><a href="wincmd-pro.html">Windows Command Center Pro</a></li></ul></div>
+    <div class="footer-col"><h4>Support</h4><ul><li><a href="https://t.me/RecolXx" target="_blank" rel="noopener">Updates Channel</a></li><li><a href="index.html#videos">Video Tutorials</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:rclrecolx@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;color:#00ff88;"></i>rclrecolx@gmail.com</a></li><li><a href="https://t.me/RecoIlX" target="_blank" rel="noopener"><i class="fab fa-telegram" style="margin-right:8px;color:#00ccff;"></i>@RecoIlX</a></li></ul></div>
 </div><div class="copyright"><p>&copy; 2024 RecoilX. All rights reserved.</p></div></div></footer>
 <div class="modal-overlay" id="contactModal"><div class="modal">
     <button class="modal-close" onclick="closeContact()" aria-label="Close">&times;</button>
     <h3 data-i18n="modal.title">Contact to Order</h3>
-    <div class="order-summary"><div class="row"><span>Program</span><span>RecolX Pro</span></div><div class="row"><span>Duration</span><span id="modalDuration">1 month(s)</span></div><div class="row"><span>Price/month</span><span>$10</span></div><div class="row total"><span>Total Price</span><span id="modalTotal">$10</span></div></div>
+    <div class="order-summary"><div class="row"><span data-i18n="modal.program">Program</span><span id="modalProgram">Windows Command Center Pro</span></div><div class="row"><span data-i18n="modal.duration">Duration</span><span id="modalDuration">1 month(s)</span></div><div class="row"><span data-i18n="modal.pricePerMonth">Price/month</span><span id="modalPrice">$3</span></div><div class="row total"><span data-i18n="modal.totalPrice">Total Price</span><span id="modalTotal">$3</span></div></div>
     <div class="contact-options"><a id="gmailLink" href="#" target="_blank" rel="noopener" class="contact-btn gmail"><i class="fas fa-envelope"></i><span>Gmail — rclrecolx@gmail.com</span></a><a id="telegramLink" href="#" target="_blank" rel="noopener" class="contact-btn telegram"><i class="fab fa-telegram"></i><span>Telegram — @RecoIlX</span></a><a id="facebookLink" href="#" target="_blank" rel="noopener" class="contact-btn facebook"><i class="fab fa-facebook"></i><span>Facebook — /recolx</span></a></div>
 </div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-const T={en:{'safety.strip':'100% Safe — No game files touched · No file injection · No spyware','safety.title':'100% Safe & Trusted','safety.subtitle':'Your security comes first — full transparency about how our programs work','safety.c1.title':'No Game Files Touched','safety.c1.desc':'Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.','safety.c2.title':'No File Injection','safety.c2.desc':'Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.','safety.c3.title':'No Spyware & No Tracking','safety.c3.desc':'Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.','safety.c4.title':'100% Safe & Clean','safety.c4.desc':'Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.','nav.safety':'Safety','nav.home':'Home','nav.features':'Features','nav.howItWorks':'How It Works','nav.pricing':'Pricing','nav.faq':'FAQ','nav.getOrder':'Get Now','hero.badge':'Most Popular','hero.title':'RecolX Pro','hero.subtitle':'The essential recoil control solution for competitive gamers. Reliable, lightweight, and effective with all the core features you need.','hero.btn.download':'Download Now','hero.btn.backHome':'Back to Home','features.title':'Core Features','features.subtitle':'Essential features for reliable recoil control','features.f1.title':'Advanced Recoil Control','features.f1.desc':'Powerful recoil compensation system that works across all supported games. Smooth, natural-feeling adjustments that keep you on target during firefights.','features.f2.title':'Grenade Detection Feature','features.f2.desc':'Smart detection system automatically pauses compensation when throwing grenades. Seamlessly resumes when switching back to your weapon.','features.f3.title':'Basic Statistics Tracking','features.f3.desc':'Track your performance with built-in statistics. Monitor usage patterns, session times, and improvement metrics over time.','features.f4.title':'5 Game Profiles','features.f4.desc':'Save up to 5 different game configurations. Each profile stores your preferred settings for quick switching between games.','howItWorks.title':'How It Works','howItWorks.subtitle':'Get started in 4 simple steps','howItWorks.step1.title':'Download & Install','howItWorks.step1.desc':'Download RecolX Pro and run the installer. Lightweight setup under 1 minute.','howItWorks.step2.title':'Choose Your Game Profile','howItWorks.step2.desc':'Pick from 5 pre-configured profiles or create your own.','howItWorks.step3.title':'Configure Settings','howItWorks.step3.desc':'Adjust recoil compensation and grenade detection settings.','howItWorks.step4.title':'Start Playing!','howItWorks.step4.desc':'Launch your game and enjoy smooth, reliable recoil control.','pricing.title':'Pricing','pricing.subtitle':'Affordable and reliable','pricing.label':'RecolX Pro','pricing.perMonth':'/month','pricing.month':'month(s)','pricing.total':'Total','pricing.btn':'Contact Me to Order','faq.title':'Frequently Asked Questions','faq.q1':'Is it safe to use?','faq.a1':'Yes, RecolX Pro uses advanced anti-detection technology. The lightweight design has minimal system footprint.','faq.q2':'Which games are supported?','faq.a2':'PUBG Steam, APEX Legends, Call of Duty, and more. 5 game profiles cover the most popular FPS titles.','faq.q3':'How do I get updates?','faq.a3':'Through our Telegram channel (@RecoIlX). Updates are included free.','faq.q4':'What if I need help?','faq.a4':'Contact us via Telegram, Gmail, or Facebook.','footer.about':'The most advanced recoil control & detection system.','modal.title':'Contact to Order'},ar:{'safety.strip':'آمن 100% — لا نلمس ملفات الألعاب · لا حقن ملفات · لا تجسس','safety.title':'آمن وموثوق 100%','safety.subtitle':'أمانك يأتي أولاً — شفافية كاملة حول طريقة عمل برامجنا','safety.c1.title':'لا نلمس ملفات الألعاب','safety.c1.desc':'برامجنا لا تقرأ أو تعدّل أو تتدخل في ملفات الألعاب بأي شكل. تعمل بشكل مستقل تماماً بجانب لعبتك.','safety.c2.title':'لا حقن أي ملفات','safety.c2.desc':'لا يتم حقن أي ملفات ضارة في حاسوبك أو نظامك إطلاقاً. لا عمليات خفية، لا تعديلات على النظام، لا شيء مريب.','safety.c3.title':'لا تجسس ولا تتبع','safety.c3.desc':'صفر تجسس على نشاطك أو بياناتك. لا تسجيل لضغطات المفاتيح، لا جمع بيانات، لا تتبع خلفي من أي نوع.','safety.c4.title':'آمن ونظيف 100%','safety.c4.desc':'كل إصدار يُختبر ويُتحقق منه يدوياً قبل النشر. ما نَعِد به هو ما تحصل عليه بالضبط — ثقتك أهم شيء عندنا.','nav.safety':'الأمان','nav.home':'الرئيسية','nav.features':'المميزات','nav.howItWorks':'كيف يعمل','nav.pricing':'الأسعار','nav.faq':'الأسئلة','nav.getOrder':'اطلب الآن','hero.badge':'الأكثر شعبية','hero.title':'RecolX Pro','hero.subtitle':'حل التحكم الأساسي في الارتداد للاعبين التنافسيين. موثوق وخفيف وفعال بجميع المميزات الأساسية.','hero.btn.download':'تحميل الآن','hero.btn.backHome':'العودة للرئيسية','features.title':'المميزات الأساسية','features.subtitle':'مميزات أساسية للتحكم الموثوق في الارتداد','features.f1.title':'تحكم متقدم في الارتداد','features.f1.desc':'نظام تعويض ارتداد قوي يعمل عبر جميع الألعاب المدعومة. تعديلات سلسة تحافظ على هدفك أثناء المعارك.','features.f2.title':'ميزة اكتشاف القنابل','features.f2.desc':'نظام اكتشاف ذكي يتوقف تلقائياً عند رمي القنابل.','features.f3.title':'تتبع إحصائيات أساسي','features.f3.desc':'تتبع أدائك مع إحصائيات مدمجة. راقب أنماط الاستخدام وأوقات الجلسات.','features.f4.title':'5 ملفات ألعاب','features.f4.desc':'احفظ حتى 5 إعدادات مختلفة لكل لعبة.','howItWorks.title':'كيف يعمل','howItWorks.subtitle':'ابدأ في 4 خطوات بسيطة','howItWorks.step1.title':'تحميل وتثبيت','howItWorks.step1.desc':'حمّل RecolX Pro وشغّل المثبّت.','howItWorks.step2.title':'اختر ملف لعبتك','howItWorks.step2.desc':'اختر من 5 ملفات محضّرة.','howItWorks.step3.title':'أعد الإعدادات','howItWorks.step3.desc':'اضبط تعويض الارتداد وإعدادات اكتشاف القنابل.','howItWorks.step4.title':'ابدأ اللعب!','howItWorks.step4.desc':'شغّل لعبتك واستمتع بتحكم سلس.','pricing.title':'الأسعار','pricing.subtitle':'ميسور وموثوق','pricing.label':'RecolX Pro','pricing.perMonth':'/شهر','pricing.month':'شهر(أشهر)','pricing.total':'المجموع','pricing.btn':'تواصل معي للطلب','faq.title':'الأسئلة الشائعة','faq.q1':'هل هو آمن؟','faq.a1':'نعم، يستخدم RecolX Pro تقنية مكافحة اكتشاف متقدمة.','faq.q2':'ما الألعاب المدعومة؟','faq.a2':'PUBG Steam و APEX Legends و COD والمزيد.','faq.q3':'كيف أحصل على التحديثات؟','faq.a3':'عبر قناة Telegram. التحديثات مشمولة مجاناً.','faq.q4':'ماذا لو احتجت مساعدة؟','faq.a4':'تواصل معنا عبر Telegram أو Gmail أو Facebook.','footer.about':'أكثر نظام تحكم في الارتداد تقدماً.','modal.title':'تواصل للطلب'}};
-let L='en',M=1;const P=10;
+const T={en:{'safety.strip':'100% Safe — No game files touched · No file injection · No spyware','safety.title':'100% Safe & Trusted','safety.subtitle':'Your security comes first — full transparency about how our programs work','safety.c1.title':'No Game Files Touched','safety.c1.desc':'Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.','safety.c2.title':'No File Injection','safety.c2.desc':'Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.','safety.c3.title':'No Spyware & No Tracking','safety.c3.desc':'Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.','safety.c4.title':'100% Safe & Clean','safety.c4.desc':'Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.','nav.safety':'Safety','nav.home':'Home','nav.features':'Features','nav.howItWorks':'How It Works','nav.pricing':'Pricing','nav.faq':'FAQ','nav.getOrder':'Get Now','hero.badge':'NEW RELEASE','hero.title':'Windows Command Center Pro','hero.subtitle':'The essential toolbox for every Windows user — 140+ commands across 13 categories with smart search, favorites, professional themes and a live console. Stop memorizing commands.','hero.btn.get':'Get It Now','hero.btn.backHome':'Back to Home','features.title':'Core Features','features.subtitle':'Everything you need to master Windows commands','features.f1.title':'140+ Commands, 13 Categories','features.f1.desc':'A complete, organized library covering network, system, disk, security, diagnostics and more. Always find the right command for the job.','features.f2.title':'Smart Search & Filters','features.f2.desc':'Find any command in seconds with instant search and advanced category filters. No more scrolling through endless documentation.','features.f3.title':'Favorites & History','features.f3.desc':'Star your most-used commands for one-click access, and revisit your full execution history anytime. Export commands and history when needed.','features.f4.title':'4 Themes + Live Console','features.f4.desc':'Professional themes to match your style, plus a live console with dynamic command building and admin execution. Bilingual interface: Arabic & English.','howItWorks.title':'How It Works','howItWorks.subtitle':'Get started in 4 simple steps','howItWorks.step1.title':'Get Your License','howItWorks.step1.desc':'Choose monthly or lifetime, contact us and receive your activation key.','howItWorks.step2.title':'Browse or Search','howItWorks.step2.desc':'Explore 13 organized categories or search instantly for the command you need.','howItWorks.step3.title':'Build & Run','howItWorks.step3.desc':'Use dynamic command building and the live console, with admin execution support.','howItWorks.step4.title':'Save & Export','howItWorks.step4.desc':'Star favorites, keep your history, and export commands for later use.','pricing.title':'Pricing','pricing.subtitle':'Simple plans for every user','pricing.tagMonthly':'MONTHLY','pricing.tagLifetime':'LIFETIME — BEST VALUE','pricing.labelM':'Windows Command Center Pro','pricing.perMonth':'/month','pricing.oneTime':'one-time payment','pricing.month':'month(s)','pricing.total':'Total','pricing.btnM':'Contact Me to Order','pricing.btnL':'Get Lifetime License','pricing.lf1':'Everything in Monthly Plan','pricing.lf2':'All 4 Themes Unlocked','pricing.lf3':'Priority Updates','pricing.lf4':'Hardware-Bound Activation','pricing.lf5':'RSA-2048 License Protection','faq.title':'Frequently Asked Questions','faq.q1':'What is Windows Command Center Pro?','faq.a1':'A desktop tool that organizes 140+ Windows commands into 13 categories with instant search, favorites, command history, 4 professional themes and a live console — so you never have to memorize commands or search online again.','faq.q2':'Which Windows versions are supported?','faq.a2':'Windows 10 and Windows 11 (64-bit). The interface is bilingual — Arabic and English — and supports dynamic command building with admin execution.','faq.q3':'Monthly or Lifetime — which should I choose?','faq.a3':'Monthly costs $3/month and is great for trying it out. The Lifetime license is a one-time $25 payment, bound to your hardware, with all themes unlocked, priority updates and RSA-2048 license protection.','faq.q4':'How do I get it after payment?','faq.a4':'Contact us via Telegram (@RecoIlX) or Gmail (rclrecolx@gmail.com). We usually reply within a few hours with your license key, download link and activation help.','footer.about':'Professional gaming tools and Windows utilities from the RecoilX team.','modal.title':'Contact to Order','modal.program':'Program','modal.duration':'Duration','modal.pricePerMonth':'Price','modal.totalPrice':'Total Price'},ar:{'safety.strip':'آمن 100% — لا نلمس ملفات الألعاب · لا حقن ملفات · لا تجسس','safety.title':'آمن وموثوق 100%','safety.subtitle':'أمانك يأتي أولاً — شفافية كاملة حول طريقة عمل برامجنا','safety.c1.title':'لا نلمس ملفات الألعاب','safety.c1.desc':'برامجنا لا تقرأ أو تعدّل أو تتدخل في ملفات الألعاب بأي شكل. تعمل بشكل مستقل تماماً بجانب لعبتك.','safety.c2.title':'لا حقن أي ملفات','safety.c2.desc':'لا يتم حقن أي ملفات ضارة في حاسوبك أو نظامك إطلاقاً. لا عمليات خفية، لا تعديلات على النظام، لا شيء مريب.','safety.c3.title':'لا تجسس ولا تتبع','safety.c3.desc':'صفر تجسس على نشاطك أو بياناتك. لا تسجيل لضغطات المفاتيح، لا جمع بيانات، لا تتبع خلفي من أي نوع.','safety.c4.title':'آمن ونظيف 100%','safety.c4.desc':'كل إصدار يُختبر ويُتحقق منه يدوياً قبل النشر. ما نَعِد به هو ما تحصل عليه بالضبط — ثقتك أهم شيء عندنا.','nav.safety':'الأمان','nav.home':'الرئيسية','nav.features':'المميزات','nav.howItWorks':'كيف يعمل','nav.pricing':'الأسعار','nav.faq':'الأسئلة','nav.getOrder':'اطلب الآن','hero.badge':'إصدار جديد','hero.title':'ويندوز كوماند سنتر برو','hero.subtitle':'صندوق الأدوات الأساسي لكل مستخدم ويندوز — أكثر من 140 أمراً في 13 فئة مع بحث ذكي ومفضلة وثيمات احترافية وشاشة أوامر حية. لم تعد بحاجة لحفظ الأوامر.','hero.btn.get':'احصل عليه الآن','hero.btn.backHome':'العودة للرئيسية','features.title':'المميزات الأساسية','features.subtitle':'كل ما تحتاجه لإتقان أوامر ويندوز','features.f1.title':'+140 أمراً في 13 فئة','features.f1.desc':'مكتبة كاملة ومنظمة تغطي الشبكة والنظام والأقراص والأمان والتشخيص والمزيد. تجد دائماً الأمر المناسب للمهمة.','features.f2.title':'بحث ذكي وفلاتر','features.f2.desc':'اعثر على أي أمر في ثوانٍ مع البحث الفوري والفلاتر المتقدمة. لا مزيد من التصفح الطويل للتوثيق.','features.f3.title':'المفضلة والسجل','features.f3.desc':'ضَع نجمة على أوامرك الأكثر استخداماً للوصول بنقرة واحدة، وراجع سجل التنفيذ الكامل في أي وقت. صدّر الأوامر والسجل عند الحاجة.','features.f4.title':'4 ثيمات + شاشة أوامر حية','features.f4.desc':'ثيمات احترافية تناسب ذوقك، مع شاشة أوامر حية وبناء أوامر ديناميكي وتنفيذ كمسؤول. واجهة ثنائية اللغة: عربي وإنجليزي.','howItWorks.title':'كيف يعمل','howItWorks.subtitle':'ابدأ في 4 خطوات بسيطة','howItWorks.step1.title':'احصل على ترخيصك','howItWorks.step1.desc':'اختر شهرياً أو مدى الحياة، تواصل معنا واستلم مفتاح التفعيل.','howItWorks.step2.title':'تصفح أو ابحث','howItWorks.step2.desc':'استكشف 13 فئة منظمة أو ابحث فوراً عن الأمر الذي تحتاجه.','howItWorks.step3.title':'ابنِ وشغّل','howItWorks.step3.desc':'استخدم البناء الديناميكي للأوامر وشاشة الأوامر الحية مع دعم التنفيذ كمسؤول.','howItWorks.step4.title':'احفظ وصدّر','howItWorks.step4.desc':'ضع المفضلة، احتفظ بالسجل، وصدّر الأوامر للاستخدام لاحقاً.','pricing.title':'الأسعار','pricing.subtitle':'خطط بسيطة لكل مستخدم','pricing.tagMonthly':'شهري','pricing.tagLifetime':'مدى الحياة — الأفضل قيمة','pricing.labelM':'ويندوز كوماند سنتر برو','pricing.perMonth':'/شهر','pricing.oneTime':'دفعة واحدة','pricing.month':'شهر(أشهر)','pricing.total':'المجموع','pricing.btnM':'تواصل معي للطلب','pricing.btnL':'احصل على ترخيص مدى الحياة','pricing.lf1':'كل شيء في الخطة الشهرية','pricing.lf2':'جميع الثيمات الأربعة مفتوحة','pricing.lf3':'تحديثات ذات أولوية','pricing.lf4':'تفعيل مرتبط بالجهاز','pricing.lf5':'حماية ترخيص RSA-2048','faq.title':'الأسئلة الشائعة','faq.q1':'ما هو ويندوز كوماند سنتر برو؟','faq.a1':'أداة سطح مكتب تنظّم أكثر من 140 أمر ويندوز في 13 فئة مع بحث فوري ومفضلة وسجل أوامر و4 ثيمات احترافية وشاشة أوامر حية — فلن تحتاج لحفظ الأوامر أو البحث عنها في الإنترنت مرة أخرى.','faq.q2':'ما إصدارات ويندوز المدعومة؟','faq.a2':'ويندوز 10 وويندوز 11 (64-bit). الواجهة ثنائية اللغة — عربية وإنجليزية — وتدعم بناء الأوامر الديناميكي والتنفيذ كمسؤول.','faq.q3':'شهري أم مدى الحياة؟','faq.a3':'الخطة الشهرية بـ 3$ شهرياً مناسبة للتجربة. ترخيص مدى الحياة دفعة واحدة 25$ مرتبط بجهازك مع فتح جميع الثيمات وتحديثات ذات أولوية وحماية ترخيص RSA-2048.','faq.q4':'كيف أستلم البرنامج بعد الدفع؟','faq.a4':'تواصل معنا عبر تيليجرام (@RecoIlX) أو البريد (rclrecolx@gmail.com). نرد عادةً خلال ساعات قليلة مع مفتاح الترخيص ورابط التحميل ومساعدة التفعيل.','footer.about':'أدوات ألعاب احترافية وأدوات ويندوز من فريق RecoilX.','modal.title':'تواصل للطلب','modal.program':'البرنامج','modal.duration':'المدة','modal.pricePerMonth':'السعر','modal.totalPrice':'السعر الإجمالي'}};
+let L='en',M=1,PLAN='monthly';const P=3,PL=25;
 function switchLang(l){L=l;document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');document.documentElement.setAttribute('lang',l);document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(T[l]&&T[l][k])el.innerHTML=T[l][k];});}
 function toggleMobile(){document.getElementById('mobileMenu').classList.toggle('active');document.getElementById('hamburger').classList.toggle('active');document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('active')?'hidden':'';}
 function closeMobile(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('hamburger').classList.remove('active');document.body.style.overflow='';}
-window.addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',window.scrollY>50);});
+window.addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',window.scrollY>50);},{passive:true});
 function changeMonth(d){M=Math.max(1,Math.min(24,M+d));document.getElementById('monthDisplay').textContent=M;document.getElementById('priceDisplay').textContent=P;document.getElementById('totalDisplay').textContent=P*M;}
-function openContact(){const t=P*M,n='RecolX Pro';document.getElementById('modalDuration').textContent=M+' month(s)';document.getElementById('modalTotal').textContent='$'+t;const m=encodeURIComponent('Hi, I\'d like to order: '+n+'\nDuration: '+M+' month(s)\nTotal: $'+t);document.getElementById('gmailLink').href='mailto:rclrecolx@gmail.com?subject=Order: '+encodeURIComponent(n)+'&body='+m;document.getElementById('telegramLink').href='https://t.me/RecoIlX';document.getElementById('facebookLink').href='https://www.facebook.com/recolx';document.getElementById('contactModal').classList.add('active');document.body.style.overflow='hidden';}
+function openContact(plan){PLAN=plan||'monthly';let n,dur,pm,tot;if(PLAN==='lifetime'){n='Windows Command Center Pro — Lifetime';dur=L==='ar'?'مدى الحياة':'Lifetime';pm='$'+PL;tot='$'+PL;}else{n='Windows Command Center Pro — Monthly';dur=M+' '+(L==='ar'?'شهر':'month(s)');pm='$'+P+'/month';tot='$'+(P*M);}document.getElementById('modalProgram').textContent=n;document.getElementById('modalDuration').textContent=dur;document.getElementById('modalPrice').textContent=pm;document.getElementById('modalTotal').textContent=tot;const m=encodeURIComponent('Hi, I\'d like to order: '+n+'\nDuration: '+dur+'\nTotal: '+tot);document.getElementById('gmailLink').href='mailto:rclrecolx@gmail.com?subject=Order: '+encodeURIComponent(n)+'&body='+m;document.getElementById('telegramLink').href='https://t.me/RecoIlX';document.getElementById('facebookLink').href='https://www.facebook.com/recolx';document.getElementById('contactModal').classList.add('active');document.body.style.overflow='hidden';}
 function closeContact(){document.getElementById('contactModal').classList.remove('active');document.body.style.overflow='';}
 document.getElementById('contactModal').addEventListener('click',function(e){if(e.target===this)closeContact();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeContact();});
 function toggleFaq(el){el.parentElement.classList.toggle('active');}
-(function(){const c=document.getElementById('particles-container'),cols=['#00ff88','#00ccff','#ff2d75','#FFD700','#a855f7'];for(let i=0;i<30;i++){const p=document.createElement('div');p.className='particle';const s=Math.random()*4+2;p.style.cssText='width:'+s+'px;height:'+s+'px;background:'+cols[Math.floor(Math.random()*cols.length)]+';left:'+Math.random()*100+'%;animation-duration:'+(Math.random()*15+10)+'s;animation-delay:'+(Math.random()*15)+'s;';c.appendChild(p);}})();
+(function(){const c=document.getElementById('particles-container'),cols=['#00ff88','#00ccff','#ff2d75','#FFD700','#a855f7'];const N=window.innerWidth<768?10:30;for(let i=0;i<N;i++){const p=document.createElement('div');p.className='particle';const s=Math.random()*4+2;p.style.cssText='width:'+s+'px;height:'+s+'px;background:'+cols[Math.floor(Math.random()*cols.length)]+';left:'+Math.random()*100+'%;animation-duration:'+(Math.random()*15+10)+'s;animation-delay:'+(Math.random()*15)+'s;';c.appendChild(p);}})();
 AOS.init({duration:800,once:true});
 </script>
 
 <script>
-/* RecoilX enhancements: lang persistence + dynamic year + mobile particles */
+/* RecoilX enhancements: lang persistence + dynamic year */
 (function(){
     try {
         var origSwitch = window.switchLang;
@@ -347,8 +380,6 @@ AOS.init({duration:800,once:true});
             window.switchLang(saved);
         }
     } catch(e) {}
-
-    /* dynamic copyright year */
     document.querySelectorAll('.copyright p').forEach(function(p){
         p.innerHTML = p.innerHTML.replace(/20\d{2}/, new Date().getFullYear());
     });

@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCL Scope Stabilizer ULTIMATE - RecoilX</title>
+    <meta name="description" content="RCL Scope Stabilizer ULTIMATE — the most advanced recoil control edition with Phantom Mode, Voice Responses, Phone Monitoring &amp; multi-layer protection. $25/month, all features unlocked.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://recolx-rcl.github.io/rcl-scope-ultimate.html">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="RecoilX">
+    <meta property="og:title" content="RCL Scope Stabilizer ULTIMATE — RecoilX">
+    <meta property="og:description" content="RCL Scope Stabilizer ULTIMATE — the most advanced recoil control edition with Phantom Mode, Voice Responses, Phone Monitoring &amp; multi-layer protection. $25/month, all features unlocked.">
+    <meta property="og:url" content="https://recolx-rcl.github.io/rcl-scope-ultimate.html">
+    <meta property="og:image" content="https://recolx-rcl.github.io/images/rcl-scope-ultimate.png">
+    <meta property="og:image:width" content="1344">
+    <meta property="og:image:height" content="768">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RCL Scope Stabilizer ULTIMATE — RecoilX">
+    <meta name="twitter:description" content="RCL Scope Stabilizer ULTIMATE — the most advanced recoil control edition with Phantom Mode, Voice Responses, Phone Monitoring &amp; multi-layer protection. $25/month, all features unlocked.">
+    <meta name="twitter:image" content="https://recolx-rcl.github.io/images/rcl-scope-ultimate.png">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" as="image" href="images/rcl-scope-ultimate.png">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RCL Scope Stabilizer ULTIMATE",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Windows",
+  "description": "RCL Scope Stabilizer ULTIMATE — the most advanced recoil control edition with Phantom Mode, Voice Responses, Phone Monitoring & multi-layer protection. $25/month, all features unlocked.",
+  "url": "https://recolx-rcl.github.io/rcl-scope-ultimate.html",
+  "offers": {
+    "@type": "Offer",
+    "price": "25",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://recolx-rcl.github.io/rcl-scope-ultimate.html"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "RecoilX",
+    "url": "https://recolx-rcl.github.io/"
+  }
+}
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -181,7 +229,38 @@
             .steps-grid { grid-template-columns:1fr; }
         }
         @media (max-width:480px) { .section { padding:60px 16px; } .hero { padding:100px 16px 60px; } }
-    </style>
+    
+        /* ===== v2: program card media ===== */
+        .program-card-media{margin:-28px -28px 20px;border-radius:19px 19px 0 0;overflow:hidden;position:relative;border-bottom:1px solid var(--border);background:var(--bg)}
+        .program-card-media img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .5s ease}
+        .program-card:hover .program-card-media img{transform:scale(1.07)}
+        .program-card-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 55%,rgba(10,10,15,.5));pointer-events:none}
+
+        /* ===== v2: hero visual + safety strip ===== */
+        .safety-strip{display:inline-flex;align-items:center;gap:10px;margin-top:8px;padding:10px 22px;border-radius:50px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.3);color:var(--primary);font-size:.88rem;font-weight:600;backdrop-filter:blur(10px)}
+        .safety-strip i{font-size:1rem}
+        .hero-visual{position:relative;max-width:720px;margin:36px auto 0;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 24px 80px rgba(0,255,136,.12)}
+        .hero-visual img{width:100%;display:block}
+        .hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 60%,rgba(10,10,15,.55));pointer-events:none}
+        @media(max-width:640px){.safety-strip{font-size:.72rem;padding:8px 14px;gap:8px}.safety-strip span{white-space:normal;line-height:1.4}}
+
+        /* ===== v2: safety section ===== */
+        .safety-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;margin-top:12px}
+        .safety-visual{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 20px 60px rgba(0,255,136,.1)}
+        .safety-visual img{width:100%;display:block}
+        .safety-cards{display:flex;flex-direction:column;gap:16px}
+        .safety-card{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;transition:all .3s ease}
+        .safety-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,255,136,.08)}
+        .safety-icon{flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(0,255,136,.15),rgba(0,204,255,.15));display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.15rem;border:1px solid rgba(0,255,136,.2)}
+        .safety-card h3{font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--text)}
+        .safety-card p{color:var(--text-muted);font-size:.88rem;line-height:1.6;text-align:start}
+        @media(max-width:900px){.safety-grid{grid-template-columns:1fr}.safety-visual{max-width:520px;margin:0 auto}}
+
+        /* v2 fix: hero media wrapper */
+        .hero{flex-wrap:wrap;row-gap:36px}
+        .hero-media{display:flex;flex-direction:column;align-items:center;gap:18px;flex:1 1 340px;min-width:280px}
+        .hero-media .hero-visual{margin:0;width:100%}
+</style>
 </head>
 <body>
 <div id="particles-container"></div>
@@ -194,7 +273,7 @@
             <li><a href="#features" data-i18n="nav.features">Features</a></li>
             <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
             <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="#safety" data-i18n="nav.safety">Safety</a></li><li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
         </ul></nav>
         <div class="header-actions">
             <div class="lang-switcher">
@@ -212,7 +291,7 @@
     <a href="#features" onclick="closeMobile()" data-i18n="nav.features">Features</a>
     <a href="#how-it-works" onclick="closeMobile()" data-i18n="nav.howItWorks">How It Works</a>
     <a href="#pricing" onclick="closeMobile()" data-i18n="nav.pricing">Pricing</a>
-    <a href="#faq" onclick="closeMobile()" data-i18n="nav.faq">FAQ</a>
+    <a href="#safety" onclick="closeMobile()" data-i18n="nav.safety">Safety</a><a href="#faq" onclick="closeMobile()" data-i18n="nav.faq">FAQ</a>
     <div style="display:flex;gap:8px;margin-top:16px;">
         <button class="lang-btn active" data-lang="en" onclick="switchLang('en');closeMobile();" style="padding:12px 24px;font-size:1rem;">EN</button>
         <button class="lang-btn" data-lang="ar" onclick="switchLang('ar');closeMobile();" style="padding:12px 24px;font-size:1rem;">AR</button>
@@ -238,6 +317,11 @@
                 <span data-i18n="hero.btn.backHome">Back to Home</span>
             </a>
         </div>
+    </div>
+
+    <div class="hero-media">
+    <div class="safety-strip" data-aos="fade-up" data-aos-delay="550"><i class="fas fa-shield-halved"></i><span data-i18n="safety.strip">100% Safe — No game files touched · No file injection · No spyware</span></div>
+    <div class="hero-visual" data-aos="zoom-in" data-aos-delay="650"><img src="images/rcl-scope-ultimate.png" alt="RCL Scope Stabilizer ULTIMATE"></div>
     </div>
 </section>
 
@@ -337,6 +421,25 @@
     </div>
 </section>
 
+
+<!-- SAFETY / TRUST 100% (v2) -->
+<section class="section" id="safety">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="safety.title">100% Safe &amp; Trusted</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <p class="section-subtitle" data-aos="fade-up" data-i18n="safety.subtitle">Your security comes first — full transparency about how our programs work</p>
+        <div class="safety-grid">
+            <div class="safety-visual" data-aos="zoom-in" data-aos-delay="100"><img src="images/safety-shield.png" alt="100% Safe Shield" loading="lazy"></div>
+            <div class="safety-cards">
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="100"><div class="safety-icon"><i class="fas fa-ban"></i></div><div><h3 data-i18n="safety.c1.title">No Game Files Touched</h3><p data-i18n="safety.c1.desc">Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="200"><div class="safety-icon"><i class="fas fa-syringe"></i></div><div><h3 data-i18n="safety.c2.title">No File Injection</h3><p data-i18n="safety.c2.desc">Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="300"><div class="safety-icon"><i class="fas fa-user-secret"></i></div><div><h3 data-i18n="safety.c3.title">No Spyware &amp; No Tracking</h3><p data-i18n="safety.c3.desc">Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="400"><div class="safety-icon"><i class="fas fa-check-circle"></i></div><div><h3 data-i18n="safety.c4.title">100% Safe &amp; Clean</h3><p data-i18n="safety.c4.desc">Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section" id="faq">
     <div class="section-inner">
         <h2 class="section-title" data-aos="fade-up" data-i18n="faq.title">Frequently Asked Questions</h2>
@@ -398,7 +501,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-const translations={en:{'nav.home':'Home','nav.features':'Features','nav.howItWorks':'How It Works','nav.pricing':'Pricing','nav.faq':'FAQ','nav.getOrder':'Get Now','hero.badge':'⚡ ULTIMATE EDITION','hero.title':'RCL Scope Stabilizer ULTIMATE','hero.subtitle':'The most advanced recoil control edition ever created. Includes exclusive features like Phantom Mode, Voice Responses, Phone Monitoring, and Multi-Layer Protection.','hero.btn.download':'Download Now','hero.btn.backHome':'Back to Home','features.title':'Exclusive Features','features.subtitle':'Premium features you won\'t find anywhere else','features.f1.title':'Smart Scope Stabilization — Advanced PID','features.f1.desc':'Next-generation PID controller with enhanced algorithms specifically optimized for scope engagement at all distances. Delivers unmatched precision and consistency.','features.f2.title':'Phantom Mode — Invisible Indicator','features.f2.desc':'Completely hides all visual indicators and overlays. Run the software with zero on-screen footprint — completely invisible to screen capture tools and streaming software.','features.f3.title':'Voice Responses — Smart Audio Alerts','features.f3.desc':'Integrated voice notification system provides real-time audio feedback for status changes, mode switches, and alerts without needing to look at the screen.','features.f4.title':'Phone Monitor — Live Remote Server','features.f4.desc':'Monitor and control the software remotely from your phone via a dedicated web interface. Full real-time status, settings adjustment, and notifications on mobile.','features.f5.title':'Multi-Layer Protection — Anti-Debug','features.f5.desc':'Advanced anti-debugging and anti-tampering protection. Multiple security layers prevent reverse engineering and ensure the software remains undetected.','features.f6.title':'Custom Game Profiles — Auto Settings','features.f6.desc':'Create unlimited game-specific profiles with automatic settings detection. The system recognizes your game and applies the optimal configuration without any manual input.','features.f7.title':'Multi-Language — PWA + QR Activation','features.f7.desc':'Progressive Web App support with QR code scanning for instant activation. Works on any device with a full multi-language interface for global accessibility.','howItWorks.title':'How It Works','howItWorks.subtitle':'Get started in 4 simple steps','howItWorks.step1.title':'Download & Install','howItWorks.step1.desc':'Download the ULTIMATE edition and run the installer. Quick setup with automatic configuration.','howItWorks.step2.title':'Choose Your Game Profile','howItWorks.step2.desc':'Select from custom profiles or let auto-detection find the best match instantly.','howItWorks.step3.title':'Configure Settings','howItWorks.step3.desc':'Customize Phantom Mode, voice alerts, phone monitoring, and all premium features.','howItWorks.step4.title':'Start Playing!','howItWorks.step4.desc':'Launch your game with full ULTIMATE features. Invisible, silent, and deadly accurate.','pricing.title':'Pricing','pricing.subtitle':'Premium pricing for the ultimate edition','pricing.label':'RCL Scope Stabilizer ULTIMATE','pricing.perMonth':'/month','pricing.month':'month(s)','pricing.total':'Total','pricing.btn':'Contact Me to Order','video.title':'See It In Action','video.subtitle':'Watch the ULTIMATE edition in gameplay','faq.title':'Frequently Asked Questions','faq.q1':'Is it safe to use?','faq.a1':'Yes, the ULTIMATE edition includes Multi-Layer Protection with advanced anti-debugging technology. Phantom Mode ensures zero on-screen footprint.','faq.q2':'Which games are supported?','faq.a2':'PUBG Steam, APEX Legends, COD (all titles), and many more FPS games. Custom profiles can be created for any game.','faq.q3':'How do I get updates?','faq.a3':'Through our Telegram channel (@RecoIlX). Updates are included free with your subscription.','faq.q4':'What if I need help?','faq.a4':'Contact us via Telegram, Gmail, or Facebook. ULTIMATE users get priority support.','footer.about':'The most advanced recoil control & detection system for competitive gamers.','footer.programs':'Programs','footer.support':'Support','footer.contact':'Contact','footer.copyright':'All rights reserved.','modal.title':'Contact to Order','modal.program':'Program','modal.duration':'Duration','modal.pricePerMonth':'Price/month','modal.totalPrice':'Total Price'},ar:{'nav.home':'الرئيسية','nav.features':'المميزات','nav.howItWorks':'كيف يعمل','nav.pricing':'الأسعار','nav.faq':'الأسئلة','nav.getOrder':'اطلب الآن','hero.badge':'⚡ النسخة النهائية','hero.title':'RCL Scope Stabilizer ULTIMATE','hero.subtitle':'أكثر نسخة تحكم ارتداد تقدماً على الإطلاق. تتضمن مميزات حصرية مثل وضع الشبح والتنبيهات الصوتية ورصد الهاتف والحماية متعددة الطبقات.','hero.btn.download':'تحميل الآن','hero.btn.backHome':'العودة للرئيسية','features.title':'مميزات حصرية','features.subtitle':'مميزات مميزة لن تجدها في أي مكان آخر','features.f1.title':'تثبيت نطاق ذكي — PID متقدم','features.f1.desc':'تحكم PID من الجيل التالي بخوارزميات محسّنة خصيصاً لاستخدام النطاق على جميع المسافات.','features.f2.title':'وضع الشبح — مؤشر غير مرئي','features.f2.desc':'يخفي تماماً جميع المؤشرات المرئية. يعمل البرنامج بدون أي أثر على الشاشة.','features.f3.title':'استجابات صوتية — تنبيهات ذكية','features.f3.desc':'نظام إشعارات صوتية مدمج يوفر ردود فعل صوتية فورية لتغييرات الحالة وتبديل الأوضاع.','features.f4.title':'مراقب الهاتف — خادم بعيد مباشر','features.f4.desc':'راقب وتحكم في البرنامج عن بعد من هاتفك عبر واجهة ويب مخصصة.','features.f5.title':'حماية متعددة الطبقات — مضاد التصحيح','features.f5.desc':'حماية متقدمة ضد التصحيح والتلاعب. طبقات أمان متعددة تمنع الهندسة العكسية.','features.f6.title':'ملفات ألعاب مخصصة — إعدادات تلقائية','features.f6.desc':'أنشئ ملفات غير محدودة مخصصة لكل لعبة مع اكتشاف تلقائي للإعدادات.','features.f7.title':'متعدد اللغات — PWA + تفعيل QR','features.f7.desc':'دعم تطبيق الويب التدريجي مع مسح رمز QR للتفعيل الفوري.','howItWorks.title':'كيف يعمل','howItWorks.subtitle':'ابدأ في 4 خطوات بسيطة','howItWorks.step1.title':'تحميل وتثبيت','howItWorks.step1.desc':'حمّل النسخة النهائية وشغّل المثبّت.','howItWorks.step2.title':'اختر ملف لعبتك','howItWorks.step2.desc':'اختر من الملفات المخصصة أو دع الاكتشاف التلقائي يجد أفضل تطابق.','howItWorks.step3.title':'أعد الإعدادات','howItWorks.step3.desc':'خصّص وضع الشبح والتنبيهات الصوتية ورصد الهاتف.','howItWorks.step4.title':'ابدأ اللعب!','howItWorks.step4.desc':'شغّل لعبتك بجميع مميزات النسخة النهائية.','pricing.title':'الأسعار','pricing.subtitle':'أسعار مميزة للنسخة النهائية','pricing.label':'RCL Scope Stabilizer ULTIMATE','pricing.perMonth':'/شهر','pricing.month':'شهر(أشهر)','pricing.total':'المجموع','pricing.btn':'تواصل معي للطلب','video.title':'شاهده في العمل','video.subtitle':'شاهد النسخة النهائية في اللعب','faq.title':'الأسئلة الشائعة','faq.q1':'هل هو آمن للاستخدام؟','faq.a1':'نعم، تتضمن النسخة النهائية حماية متعددة الطبقات مع تقنية مضادة للتصحيح.','faq.q2':'ما الألعاب المدعومة؟','faq.a2':'PUBG Steam و APEX Legends و COD والعديد من ألعاب FPS الأخرى.','faq.q3':'كيف أحصل على التحديثات؟','faq.a3':'عبر قناة Telegram (@RecoIlX). التحديثات مشمولة مجاناً مع اشتراكك.','faq.q4':'ماذا لو احتجت مساعدة؟','faq.a4':'تواصل معنا عبر Telegram أو Gmail أو Facebook. مستخدمو النسخة النهائية يحصلون على دعم ذي أولوية.','footer.about':'أكثر نظام تحكم في الارتداد تقدماً للاعبين التنافسيين.','footer.programs':'البرامج','footer.support':'الدعم','footer.contact':'التواصل','footer.copyright':'جميع الحقوق محفوظة.','modal.title':'تواصل للطلب','modal.program':'البرنامج','modal.duration':'المدة','modal.pricePerMonth':'السعر/شهر','modal.totalPrice':'السعر الإجمالي'}};
+const translations={en:{'safety.strip':'100% Safe — No game files touched · No file injection · No spyware','safety.title':'100% Safe & Trusted','safety.subtitle':'Your security comes first — full transparency about how our programs work','safety.c1.title':'No Game Files Touched','safety.c1.desc':'Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.','safety.c2.title':'No File Injection','safety.c2.desc':'Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.','safety.c3.title':'No Spyware & No Tracking','safety.c3.desc':'Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.','safety.c4.title':'100% Safe & Clean','safety.c4.desc':'Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.','nav.safety':'Safety','nav.home':'Home','nav.features':'Features','nav.howItWorks':'How It Works','nav.pricing':'Pricing','nav.faq':'FAQ','nav.getOrder':'Get Now','hero.badge':'⚡ ULTIMATE EDITION','hero.title':'RCL Scope Stabilizer ULTIMATE','hero.subtitle':'The most advanced recoil control edition ever created. Includes exclusive features like Phantom Mode, Voice Responses, Phone Monitoring, and Multi-Layer Protection.','hero.btn.download':'Download Now','hero.btn.backHome':'Back to Home','features.title':'Exclusive Features','features.subtitle':'Premium features you won\'t find anywhere else','features.f1.title':'Smart Scope Stabilization — Advanced PID','features.f1.desc':'Next-generation PID controller with enhanced algorithms specifically optimized for scope engagement at all distances. Delivers unmatched precision and consistency.','features.f2.title':'Phantom Mode — Invisible Indicator','features.f2.desc':'Completely hides all visual indicators and overlays. Run the software with zero on-screen footprint — completely invisible to screen capture tools and streaming software.','features.f3.title':'Voice Responses — Smart Audio Alerts','features.f3.desc':'Integrated voice notification system provides real-time audio feedback for status changes, mode switches, and alerts without needing to look at the screen.','features.f4.title':'Phone Monitor — Live Remote Server','features.f4.desc':'Monitor and control the software remotely from your phone via a dedicated web interface. Full real-time status, settings adjustment, and notifications on mobile.','features.f5.title':'Multi-Layer Protection — Anti-Debug','features.f5.desc':'Advanced anti-debugging and anti-tampering protection. Multiple security layers prevent reverse engineering and ensure the software remains undetected.','features.f6.title':'Custom Game Profiles — Auto Settings','features.f6.desc':'Create unlimited game-specific profiles with automatic settings detection. The system recognizes your game and applies the optimal configuration without any manual input.','features.f7.title':'Multi-Language — PWA + QR Activation','features.f7.desc':'Progressive Web App support with QR code scanning for instant activation. Works on any device with a full multi-language interface for global accessibility.','howItWorks.title':'How It Works','howItWorks.subtitle':'Get started in 4 simple steps','howItWorks.step1.title':'Download & Install','howItWorks.step1.desc':'Download the ULTIMATE edition and run the installer. Quick setup with automatic configuration.','howItWorks.step2.title':'Choose Your Game Profile','howItWorks.step2.desc':'Select from custom profiles or let auto-detection find the best match instantly.','howItWorks.step3.title':'Configure Settings','howItWorks.step3.desc':'Customize Phantom Mode, voice alerts, phone monitoring, and all premium features.','howItWorks.step4.title':'Start Playing!','howItWorks.step4.desc':'Launch your game with full ULTIMATE features. Invisible, silent, and deadly accurate.','pricing.title':'Pricing','pricing.subtitle':'Premium pricing for the ultimate edition','pricing.label':'RCL Scope Stabilizer ULTIMATE','pricing.perMonth':'/month','pricing.month':'month(s)','pricing.total':'Total','pricing.btn':'Contact Me to Order','video.title':'See It In Action','video.subtitle':'Watch the ULTIMATE edition in gameplay','faq.title':'Frequently Asked Questions','faq.q1':'Is it safe to use?','faq.a1':'Yes, the ULTIMATE edition includes Multi-Layer Protection with advanced anti-debugging technology. Phantom Mode ensures zero on-screen footprint.','faq.q2':'Which games are supported?','faq.a2':'PUBG Steam, APEX Legends, COD (all titles), and many more FPS games. Custom profiles can be created for any game.','faq.q3':'How do I get updates?','faq.a3':'Through our Telegram channel (@RecoIlX). Updates are included free with your subscription.','faq.q4':'What if I need help?','faq.a4':'Contact us via Telegram, Gmail, or Facebook. ULTIMATE users get priority support.','footer.about':'The most advanced recoil control & detection system for competitive gamers.','footer.programs':'Programs','footer.support':'Support','footer.contact':'Contact','footer.copyright':'All rights reserved.','modal.title':'Contact to Order','modal.program':'Program','modal.duration':'Duration','modal.pricePerMonth':'Price/month','modal.totalPrice':'Total Price'},ar:{'safety.strip':'آمن 100% — لا نلمس ملفات الألعاب · لا حقن ملفات · لا تجسس','safety.title':'آمن وموثوق 100%','safety.subtitle':'أمانك يأتي أولاً — شفافية كاملة حول طريقة عمل برامجنا','safety.c1.title':'لا نلمس ملفات الألعاب','safety.c1.desc':'برامجنا لا تقرأ أو تعدّل أو تتدخل في ملفات الألعاب بأي شكل. تعمل بشكل مستقل تماماً بجانب لعبتك.','safety.c2.title':'لا حقن أي ملفات','safety.c2.desc':'لا يتم حقن أي ملفات ضارة في حاسوبك أو نظامك إطلاقاً. لا عمليات خفية، لا تعديلات على النظام، لا شيء مريب.','safety.c3.title':'لا تجسس ولا تتبع','safety.c3.desc':'صفر تجسس على نشاطك أو بياناتك. لا تسجيل لضغطات المفاتيح، لا جمع بيانات، لا تتبع خلفي من أي نوع.','safety.c4.title':'آمن ونظيف 100%','safety.c4.desc':'كل إصدار يُختبر ويُتحقق منه يدوياً قبل النشر. ما نَعِد به هو ما تحصل عليه بالضبط — ثقتك أهم شيء عندنا.','nav.safety':'الأمان','nav.home':'الرئيسية','nav.features':'المميزات','nav.howItWorks':'كيف يعمل','nav.pricing':'الأسعار','nav.faq':'الأسئلة','nav.getOrder':'اطلب الآن','hero.badge':'⚡ النسخة النهائية','hero.title':'RCL Scope Stabilizer ULTIMATE','hero.subtitle':'أكثر نسخة تحكم ارتداد تقدماً على الإطلاق. تتضمن مميزات حصرية مثل وضع الشبح والتنبيهات الصوتية ورصد الهاتف والحماية متعددة الطبقات.','hero.btn.download':'تحميل الآن','hero.btn.backHome':'العودة للرئيسية','features.title':'مميزات حصرية','features.subtitle':'مميزات مميزة لن تجدها في أي مكان آخر','features.f1.title':'تثبيت نطاق ذكي — PID متقدم','features.f1.desc':'تحكم PID من الجيل التالي بخوارزميات محسّنة خصيصاً لاستخدام النطاق على جميع المسافات.','features.f2.title':'وضع الشبح — مؤشر غير مرئي','features.f2.desc':'يخفي تماماً جميع المؤشرات المرئية. يعمل البرنامج بدون أي أثر على الشاشة.','features.f3.title':'استجابات صوتية — تنبيهات ذكية','features.f3.desc':'نظام إشعارات صوتية مدمج يوفر ردود فعل صوتية فورية لتغييرات الحالة وتبديل الأوضاع.','features.f4.title':'مراقب الهاتف — خادم بعيد مباشر','features.f4.desc':'راقب وتحكم في البرنامج عن بعد من هاتفك عبر واجهة ويب مخصصة.','features.f5.title':'حماية متعددة الطبقات — مضاد التصحيح','features.f5.desc':'حماية متقدمة ضد التصحيح والتلاعب. طبقات أمان متعددة تمنع الهندسة العكسية.','features.f6.title':'ملفات ألعاب مخصصة — إعدادات تلقائية','features.f6.desc':'أنشئ ملفات غير محدودة مخصصة لكل لعبة مع اكتشاف تلقائي للإعدادات.','features.f7.title':'متعدد اللغات — PWA + تفعيل QR','features.f7.desc':'دعم تطبيق الويب التدريجي مع مسح رمز QR للتفعيل الفوري.','howItWorks.title':'كيف يعمل','howItWorks.subtitle':'ابدأ في 4 خطوات بسيطة','howItWorks.step1.title':'تحميل وتثبيت','howItWorks.step1.desc':'حمّل النسخة النهائية وشغّل المثبّت.','howItWorks.step2.title':'اختر ملف لعبتك','howItWorks.step2.desc':'اختر من الملفات المخصصة أو دع الاكتشاف التلقائي يجد أفضل تطابق.','howItWorks.step3.title':'أعد الإعدادات','howItWorks.step3.desc':'خصّص وضع الشبح والتنبيهات الصوتية ورصد الهاتف.','howItWorks.step4.title':'ابدأ اللعب!','howItWorks.step4.desc':'شغّل لعبتك بجميع مميزات النسخة النهائية.','pricing.title':'الأسعار','pricing.subtitle':'أسعار مميزة للنسخة النهائية','pricing.label':'RCL Scope Stabilizer ULTIMATE','pricing.perMonth':'/شهر','pricing.month':'شهر(أشهر)','pricing.total':'المجموع','pricing.btn':'تواصل معي للطلب','video.title':'شاهده في العمل','video.subtitle':'شاهد النسخة النهائية في اللعب','faq.title':'الأسئلة الشائعة','faq.q1':'هل هو آمن للاستخدام؟','faq.a1':'نعم، تتضمن النسخة النهائية حماية متعددة الطبقات مع تقنية مضادة للتصحيح.','faq.q2':'ما الألعاب المدعومة؟','faq.a2':'PUBG Steam و APEX Legends و COD والعديد من ألعاب FPS الأخرى.','faq.q3':'كيف أحصل على التحديثات؟','faq.a3':'عبر قناة Telegram (@RecoIlX). التحديثات مشمولة مجاناً مع اشتراكك.','faq.q4':'ماذا لو احتجت مساعدة؟','faq.a4':'تواصل معنا عبر Telegram أو Gmail أو Facebook. مستخدمو النسخة النهائية يحصلون على دعم ذي أولوية.','footer.about':'أكثر نظام تحكم في الارتداد تقدماً للاعبين التنافسيين.','footer.programs':'البرامج','footer.support':'الدعم','footer.contact':'التواصل','footer.copyright':'جميع الحقوق محفوظة.','modal.title':'تواصل للطلب','modal.program':'البرنامج','modal.duration':'المدة','modal.pricePerMonth':'السعر/شهر','modal.totalPrice':'السعر الإجمالي'}};
 let currentLang='en',currentMonth=1;const basePrice=25;
 function switchLang(l){currentLang=l;document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');document.documentElement.setAttribute('lang',l);document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(translations[l]&&translations[l][k])el.innerHTML=translations[l][k];});}
 function toggleMobile(){document.getElementById('mobileMenu').classList.toggle('active');document.getElementById('hamburger').classList.toggle('active');document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('active')?'hidden':'';}
@@ -412,6 +515,34 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeContact
 function toggleFaq(el){el.parentElement.classList.toggle('active');}
 (function(){const c=document.getElementById('particles-container'),colors=['#FFD700','#f59e0b','#00ff88','#00ccff','#ff2d75'];for(let i=0;i<30;i++){const p=document.createElement('div');p.className='particle';const s=Math.random()*4+2;p.style.cssText='width:'+s+'px;height:'+s+'px;background:'+colors[Math.floor(Math.random()*colors.length)]+';left:'+Math.random()*100+'%;animation-duration:'+(Math.random()*15+10)+'s;animation-delay:'+(Math.random()*15)+'s;';c.appendChild(p);}})();
 AOS.init({duration:800,once:true});
+</script>
+
+<script>
+/* RecoilX enhancements: lang persistence + dynamic year + mobile particles */
+(function(){
+    try {
+        var origSwitch = window.switchLang;
+        if (typeof origSwitch === 'function') {
+            window.switchLang = function(lang){
+                try { localStorage.setItem('recolx_lang', lang); } catch(e) {}
+                return origSwitch.apply(this, arguments);
+            };
+        }
+        var saved = localStorage.getItem('recolx_lang');
+        if (!saved) {
+            var nav = (navigator.language || 'en').toLowerCase();
+            saved = (nav.indexOf('ar') === 0) ? 'ar' : 'en';
+        }
+        if (saved && saved !== 'en' && typeof window.switchLang === 'function') {
+            window.switchLang(saved);
+        }
+    } catch(e) {}
+
+    /* dynamic copyright year */
+    document.querySelectorAll('.copyright p').forEach(function(p){
+        p.innerHTML = p.innerHTML.replace(/20\d{2}/, new Date().getFullYear());
+    });
+})();
 </script>
 </body>
 </html>

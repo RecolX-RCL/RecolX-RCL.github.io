@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCL Scope Stabilizer PRO v8.6 - RecoilX</title>
+    <meta name="description" content="RCL Scope Stabilizer PRO v8.6 — advanced recoil control with PID controller, breathing simulation &amp; adaptive learning for PUBG, APEX, CoD. From $20/month with 10 game profiles.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://recolx-rcl.github.io/rcl-scope-pro.html">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="RecoilX">
+    <meta property="og:title" content="RCL Scope Stabilizer PRO v8.6 — RecoilX">
+    <meta property="og:description" content="RCL Scope Stabilizer PRO v8.6 — advanced recoil control with PID controller, breathing simulation &amp; adaptive learning for PUBG, APEX, CoD. From $20/month with 10 game profiles.">
+    <meta property="og:url" content="https://recolx-rcl.github.io/rcl-scope-pro.html">
+    <meta property="og:image" content="https://recolx-rcl.github.io/images/rcl-scope-pro.png">
+    <meta property="og:image:width" content="1344">
+    <meta property="og:image:height" content="768">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RCL Scope Stabilizer PRO v8.6 — RecoilX">
+    <meta name="twitter:description" content="RCL Scope Stabilizer PRO v8.6 — advanced recoil control with PID controller, breathing simulation &amp; adaptive learning for PUBG, APEX, CoD. From $20/month with 10 game profiles.">
+    <meta name="twitter:image" content="https://recolx-rcl.github.io/images/rcl-scope-pro.png">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" as="image" href="images/rcl-scope-pro.png">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RCL Scope Stabilizer PRO v8.6",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Windows",
+  "description": "RCL Scope Stabilizer PRO v8.6 — advanced recoil control with PID controller, breathing simulation & adaptive learning for PUBG, APEX, CoD. From $20/month with 10 game profiles.",
+  "url": "https://recolx-rcl.github.io/rcl-scope-pro.html",
+  "offers": {
+    "@type": "Offer",
+    "price": "20",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://recolx-rcl.github.io/rcl-scope-pro.html"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "RecoilX",
+    "url": "https://recolx-rcl.github.io/"
+  }
+}
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -204,7 +252,38 @@
             .section { padding:60px 16px; }
             .hero { padding:100px 16px 60px; }
         }
-    </style>
+    
+        /* ===== v2: program card media ===== */
+        .program-card-media{margin:-28px -28px 20px;border-radius:19px 19px 0 0;overflow:hidden;position:relative;border-bottom:1px solid var(--border);background:var(--bg)}
+        .program-card-media img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .5s ease}
+        .program-card:hover .program-card-media img{transform:scale(1.07)}
+        .program-card-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 55%,rgba(10,10,15,.5));pointer-events:none}
+
+        /* ===== v2: hero visual + safety strip ===== */
+        .safety-strip{display:inline-flex;align-items:center;gap:10px;margin-top:8px;padding:10px 22px;border-radius:50px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.3);color:var(--primary);font-size:.88rem;font-weight:600;backdrop-filter:blur(10px)}
+        .safety-strip i{font-size:1rem}
+        .hero-visual{position:relative;max-width:720px;margin:36px auto 0;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 24px 80px rgba(0,255,136,.12)}
+        .hero-visual img{width:100%;display:block}
+        .hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 60%,rgba(10,10,15,.55));pointer-events:none}
+        @media(max-width:640px){.safety-strip{font-size:.72rem;padding:8px 14px;gap:8px}.safety-strip span{white-space:normal;line-height:1.4}}
+
+        /* ===== v2: safety section ===== */
+        .safety-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;margin-top:12px}
+        .safety-visual{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 20px 60px rgba(0,255,136,.1)}
+        .safety-visual img{width:100%;display:block}
+        .safety-cards{display:flex;flex-direction:column;gap:16px}
+        .safety-card{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;transition:all .3s ease}
+        .safety-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,255,136,.08)}
+        .safety-icon{flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(0,255,136,.15),rgba(0,204,255,.15));display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.15rem;border:1px solid rgba(0,255,136,.2)}
+        .safety-card h3{font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--text)}
+        .safety-card p{color:var(--text-muted);font-size:.88rem;line-height:1.6;text-align:start}
+        @media(max-width:900px){.safety-grid{grid-template-columns:1fr}.safety-visual{max-width:520px;margin:0 auto}}
+
+        /* v2 fix: hero media wrapper */
+        .hero{flex-wrap:wrap;row-gap:36px}
+        .hero-media{display:flex;flex-direction:column;align-items:center;gap:18px;flex:1 1 340px;min-width:280px}
+        .hero-media .hero-visual{margin:0;width:100%}
+</style>
 </head>
 <body>
 
@@ -220,7 +299,7 @@
                 <li><a href="#features" data-i18n="nav.features">Features</a></li>
                 <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
                 <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="#safety" data-i18n="nav.safety">Safety</a></li><li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -242,7 +321,7 @@
     <a href="#features" onclick="closeMobile()" data-i18n="nav.features">Features</a>
     <a href="#how-it-works" onclick="closeMobile()" data-i18n="nav.howItWorks">How It Works</a>
     <a href="#pricing" onclick="closeMobile()" data-i18n="nav.pricing">Pricing</a>
-    <a href="#faq" onclick="closeMobile()" data-i18n="nav.faq">FAQ</a>
+    <a href="#safety" onclick="closeMobile()" data-i18n="nav.safety">Safety</a><a href="#faq" onclick="closeMobile()" data-i18n="nav.faq">FAQ</a>
     <div style="display:flex;gap:8px;margin-top:16px;">
         <button class="lang-btn active" data-lang="en" onclick="switchLang('en');closeMobile();" style="padding:12px 24px;font-size:1rem;">EN</button>
         <button class="lang-btn" data-lang="ar" onclick="switchLang('ar');closeMobile();" style="padding:12px 24px;font-size:1rem;">AR</button>
@@ -269,6 +348,11 @@
                 <span data-i18n="hero.btn.backHome">Back to Home</span>
             </a>
         </div>
+    </div>
+
+    <div class="hero-media">
+    <div class="safety-strip" data-aos="fade-up" data-aos-delay="550"><i class="fas fa-shield-halved"></i><span data-i18n="safety.strip">100% Safe — No game files touched · No file injection · No spyware</span></div>
+    <div class="hero-visual" data-aos="zoom-in" data-aos-delay="650"><img src="images/rcl-scope-pro.png" alt="RCL Scope Stabilizer PRO v8.6"></div>
     </div>
 </section>
 
@@ -404,6 +488,25 @@
 </section>
 
 <!-- FAQ -->
+
+<!-- SAFETY / TRUST 100% (v2) -->
+<section class="section" id="safety">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="safety.title">100% Safe &amp; Trusted</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <p class="section-subtitle" data-aos="fade-up" data-i18n="safety.subtitle">Your security comes first — full transparency about how our programs work</p>
+        <div class="safety-grid">
+            <div class="safety-visual" data-aos="zoom-in" data-aos-delay="100"><img src="images/safety-shield.png" alt="100% Safe Shield" loading="lazy"></div>
+            <div class="safety-cards">
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="100"><div class="safety-icon"><i class="fas fa-ban"></i></div><div><h3 data-i18n="safety.c1.title">No Game Files Touched</h3><p data-i18n="safety.c1.desc">Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="200"><div class="safety-icon"><i class="fas fa-syringe"></i></div><div><h3 data-i18n="safety.c2.title">No File Injection</h3><p data-i18n="safety.c2.desc">Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="300"><div class="safety-icon"><i class="fas fa-user-secret"></i></div><div><h3 data-i18n="safety.c3.title">No Spyware &amp; No Tracking</h3><p data-i18n="safety.c3.desc">Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="400"><div class="safety-icon"><i class="fas fa-check-circle"></i></div><div><h3 data-i18n="safety.c4.title">100% Safe &amp; Clean</h3><p data-i18n="safety.c4.desc">Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section" id="faq">
     <div class="section-inner">
         <h2 class="section-title" data-aos="fade-up" data-i18n="faq.title">Frequently Asked Questions</h2>
@@ -519,7 +622,7 @@
 <script>
 // TRANSLATIONS
 const translations = {
-    en: {
+    en: {'safety.strip':'100% Safe — No game files touched · No file injection · No spyware','safety.title':'100% Safe & Trusted','safety.subtitle':'Your security comes first — full transparency about how our programs work','safety.c1.title':'No Game Files Touched','safety.c1.desc':'Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.','safety.c2.title':'No File Injection','safety.c2.desc':'Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.','safety.c3.title':'No Spyware & No Tracking','safety.c3.desc':'Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.','safety.c4.title':'100% Safe & Clean','safety.c4.desc':'Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.','nav.safety':'Safety',
         'nav.home':'Home','nav.features':'Features','nav.howItWorks':'How It Works','nav.pricing':'Pricing','nav.faq':'FAQ','nav.getOrder':'Get Now',
         'hero.badge':'NEW RELEASE — v8.6','hero.title':'RCL Scope Stabilizer PRO v8.6',
         'hero.subtitle':'The ultimate fast edition of our flagship recoil control system. Featuring advanced PID controller, breathing simulation, and adaptive learning technology for professional gaming.',
@@ -551,7 +654,7 @@ const translations = {
         'footer.about':'The most advanced recoil control & detection system for competitive gamers.','footer.programs':'Programs','footer.support':'Support','footer.updates':'Updates Channel','footer.tutorials':'Video Tutorials','footer.features':'Features','footer.contact':'Contact','footer.copyright':'All rights reserved.',
         'modal.title':'Contact to Order','modal.program':'Program','modal.duration':'Duration','modal.pricePerMonth':'Price/month','modal.totalPrice':'Total Price'
     },
-    ar: {
+    ar: {'safety.strip':'آمن 100% — لا نلمس ملفات الألعاب · لا حقن ملفات · لا تجسس','safety.title':'آمن وموثوق 100%','safety.subtitle':'أمانك يأتي أولاً — شفافية كاملة حول طريقة عمل برامجنا','safety.c1.title':'لا نلمس ملفات الألعاب','safety.c1.desc':'برامجنا لا تقرأ أو تعدّل أو تتدخل في ملفات الألعاب بأي شكل. تعمل بشكل مستقل تماماً بجانب لعبتك.','safety.c2.title':'لا حقن أي ملفات','safety.c2.desc':'لا يتم حقن أي ملفات ضارة في حاسوبك أو نظامك إطلاقاً. لا عمليات خفية، لا تعديلات على النظام، لا شيء مريب.','safety.c3.title':'لا تجسس ولا تتبع','safety.c3.desc':'صفر تجسس على نشاطك أو بياناتك. لا تسجيل لضغطات المفاتيح، لا جمع بيانات، لا تتبع خلفي من أي نوع.','safety.c4.title':'آمن ونظيف 100%','safety.c4.desc':'كل إصدار يُختبر ويُتحقق منه يدوياً قبل النشر. ما نَعِد به هو ما تحصل عليه بالضبط — ثقتك أهم شيء عندنا.','nav.safety':'الأمان',
         'nav.home':'الرئيسية','nav.features':'المميزات','nav.howItWorks':'كيف يعمل','nav.pricing':'الأسعار','nav.faq':'الأسئلة','nav.getOrder':'اطلب الآن',
         'hero.badge':'إصدار جديد — v8.6','hero.title':'RCL Scope Stabilizer PRO v8.6',
         'hero.subtitle':'النسخة السريعة النهائية من نظام التحكم في الارتداد الرائد. يتميز بتحكم PID متقدم ومحاكاة التنفس وتقنية التعلم التكيفي للألعاب الاحترافية.',
@@ -658,6 +761,34 @@ function toggleFaq(el) { el.parentElement.classList.toggle('active'); }
 })();
 
 AOS.init({ duration: 800, once: true });
+</script>
+
+<script>
+/* RecoilX enhancements: lang persistence + dynamic year + mobile particles */
+(function(){
+    try {
+        var origSwitch = window.switchLang;
+        if (typeof origSwitch === 'function') {
+            window.switchLang = function(lang){
+                try { localStorage.setItem('recolx_lang', lang); } catch(e) {}
+                return origSwitch.apply(this, arguments);
+            };
+        }
+        var saved = localStorage.getItem('recolx_lang');
+        if (!saved) {
+            var nav = (navigator.language || 'en').toLowerCase();
+            saved = (nav.indexOf('ar') === 0) ? 'ar' : 'en';
+        }
+        if (saved && saved !== 'en' && typeof window.switchLang === 'function') {
+            window.switchLang(saved);
+        }
+    } catch(e) {}
+
+    /* dynamic copyright year */
+    document.querySelectorAll('.copyright p').forEach(function(p){
+        p.innerHTML = p.innerHTML.replace(/20\d{2}/, new Date().getFullYear());
+    });
+})();
 </script>
 </body>
 </html>

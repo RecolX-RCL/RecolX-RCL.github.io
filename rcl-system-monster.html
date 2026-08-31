@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCL System Monster v4.0 - RecoilX</title>
+    <meta name="description" content="RCL System Monster v4.0 — professional PC optimization suite for gamers: deep cleaning, registry repair, FPS boosting &amp; automated maintenance. One-time $25 lifetime license.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://recolx-rcl.github.io/rcl-system-monster.html">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="RecoilX">
+    <meta property="og:title" content="RCL System Monster v4.0 — RecoilX">
+    <meta property="og:description" content="RCL System Monster v4.0 — professional PC optimization suite for gamers: deep cleaning, registry repair, FPS boosting &amp; automated maintenance. One-time $25 lifetime license.">
+    <meta property="og:url" content="https://recolx-rcl.github.io/rcl-system-monster.html">
+    <meta property="og:image" content="https://recolx-rcl.github.io/images/rcl-system-monster.png">
+    <meta property="og:image:width" content="1344">
+    <meta property="og:image:height" content="768">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RCL System Monster v4.0 — RecoilX">
+    <meta name="twitter:description" content="RCL System Monster v4.0 — professional PC optimization suite for gamers: deep cleaning, registry repair, FPS boosting &amp; automated maintenance. One-time $25 lifetime license.">
+    <meta name="twitter:image" content="https://recolx-rcl.github.io/images/rcl-system-monster.png">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" as="image" href="images/rcl-system-monster.png">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RCL System Monster v4.0",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Windows",
+  "description": "RCL System Monster v4.0 — professional PC optimization suite for gamers: deep cleaning, registry repair, FPS boosting & automated maintenance. One-time $25 lifetime license.",
+  "url": "https://recolx-rcl.github.io/rcl-system-monster.html",
+  "offers": {
+    "@type": "Offer",
+    "price": "25",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://recolx-rcl.github.io/rcl-system-monster.html"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "RecoilX",
+    "url": "https://recolx-rcl.github.io/"
+  }
+}
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -123,16 +171,47 @@
         @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
         @media(max-width:768px){.nav-links,.lang-switcher,.btn-cta.header-cta{display:none}.hamburger{display:flex}.hero-buttons{flex-direction:column;align-items:center}.btn-hero{width:100%;max-width:300px;justify-content:center}.footer-grid{grid-template-columns:1fr;gap:28px}.features-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}}
         @media(max-width:480px){.section{padding:60px 16px}.hero{padding:100px 16px 60px}}
-    </style>
+    
+        /* ===== v2: program card media ===== */
+        .program-card-media{margin:-28px -28px 20px;border-radius:19px 19px 0 0;overflow:hidden;position:relative;border-bottom:1px solid var(--border);background:var(--bg)}
+        .program-card-media img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .5s ease}
+        .program-card:hover .program-card-media img{transform:scale(1.07)}
+        .program-card-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 55%,rgba(10,10,15,.5));pointer-events:none}
+
+        /* ===== v2: hero visual + safety strip ===== */
+        .safety-strip{display:inline-flex;align-items:center;gap:10px;margin-top:8px;padding:10px 22px;border-radius:50px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.3);color:var(--primary);font-size:.88rem;font-weight:600;backdrop-filter:blur(10px)}
+        .safety-strip i{font-size:1rem}
+        .hero-visual{position:relative;max-width:720px;margin:36px auto 0;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 24px 80px rgba(0,255,136,.12)}
+        .hero-visual img{width:100%;display:block}
+        .hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 60%,rgba(10,10,15,.55));pointer-events:none}
+        @media(max-width:640px){.safety-strip{font-size:.72rem;padding:8px 14px;gap:8px}.safety-strip span{white-space:normal;line-height:1.4}}
+
+        /* ===== v2: safety section ===== */
+        .safety-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;margin-top:12px}
+        .safety-visual{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 20px 60px rgba(0,255,136,.1)}
+        .safety-visual img{width:100%;display:block}
+        .safety-cards{display:flex;flex-direction:column;gap:16px}
+        .safety-card{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;transition:all .3s ease}
+        .safety-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,255,136,.08)}
+        .safety-icon{flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(0,255,136,.15),rgba(0,204,255,.15));display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.15rem;border:1px solid rgba(0,255,136,.2)}
+        .safety-card h3{font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--text)}
+        .safety-card p{color:var(--text-muted);font-size:.88rem;line-height:1.6;text-align:start}
+        @media(max-width:900px){.safety-grid{grid-template-columns:1fr}.safety-visual{max-width:520px;margin:0 auto}}
+
+        /* v2 fix: hero media wrapper */
+        .hero{flex-wrap:wrap;row-gap:36px}
+        .hero-media{display:flex;flex-direction:column;align-items:center;gap:18px;flex:1 1 340px;min-width:280px}
+        .hero-media .hero-visual{margin:0;width:100%}
+</style>
 </head>
 <body>
 <div id="particles-container"></div>
 <header class="header" id="header"><div class="header-inner">
     <a href="index.html" class="logo"><i class="fas fa-bolt"></i> RecoilX</a>
-    <nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="#features">Features</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+    <nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="#features">Features</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#safety">Safety</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
     <div class="header-actions"><div class="lang-switcher"><button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button><button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">AR</button></div><a href="#pricing" class="btn-cta header-cta">Get Now</a><button class="hamburger" id="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button></div>
 </div></header>
-<div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="closeMobile()">Home</a><a href="#features" onclick="closeMobile()">Features</a><a href="#how-it-works" onclick="closeMobile()">How It Works</a><a href="#pricing" onclick="closeMobile()">Pricing</a><a href="#faq" onclick="closeMobile()">FAQ</a></div>
+<div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="closeMobile()">Home</a><a href="#features" onclick="closeMobile()">Features</a><a href="#how-it-works" onclick="closeMobile()">How It Works</a><a href="#pricing" onclick="closeMobile()">Pricing</a><a href="#safety" onclick="closeMobile()">Safety</a><a href="#faq" onclick="closeMobile()">FAQ</a></div>
 <section class="hero"><div class="hero-bg"></div><div class="hero-content">
     <div class="hero-badge" data-aos="fade-down"><span class="pulse-dot"></span><span data-i18n="hero.badge">SYSTEM OPTIMIZER</span></div>
     <h1 class="hero-title" data-aos="fade-up" data-i18n="hero.title">RCL System Monster v4.0</h1>
@@ -141,7 +220,12 @@
         <a href="#pricing" class="btn-hero btn-hero-primary"><i class="fas fa-download"></i><span data-i18n="hero.btn.download">Download Now</span></a>
         <a href="index.html" class="btn-hero btn-hero-secondary"><i class="fas fa-arrow-left"></i><span data-i18n="hero.btn.backHome">Back to Home</span></a>
     </div>
-</div></section>
+</div>
+    <div class="hero-media">
+    <div class="safety-strip" data-aos="fade-up" data-aos-delay="550"><i class="fas fa-shield-halved"></i><span data-i18n="safety.strip">100% Safe — No game files touched · No file injection · No spyware</span></div>
+    <div class="hero-visual" data-aos="zoom-in" data-aos-delay="650"><img src="images/rcl-system-monster.png" alt="RCL System Monster v4.0"></div>
+    </div>
+</section>
 <section class="section" id="features"><div class="section-inner">
     <h2 class="section-title" data-aos="fade-up" data-i18n="features.title">Optimization Features</h2><div class="gradient-line" data-aos="fade-up"></div>
     <p class="section-subtitle" data-aos="fade-up" data-i18n="features.subtitle">8 powerful tools to maximize your gaming performance</p>
@@ -178,6 +262,25 @@
         <button class="btn-contact-big" onclick="openContact()"><i class="fas fa-paper-plane"></i><span data-i18n="pricing.btn">Contact Me to Order</span></button>
     </div>
 </div></section>
+
+<!-- SAFETY / TRUST 100% (v2) -->
+<section class="section" id="safety">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="safety.title">100% Safe &amp; Trusted</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <p class="section-subtitle" data-aos="fade-up" data-i18n="safety.subtitle">Your security comes first — full transparency about how our programs work</p>
+        <div class="safety-grid">
+            <div class="safety-visual" data-aos="zoom-in" data-aos-delay="100"><img src="images/safety-shield.png" alt="100% Safe Shield" loading="lazy"></div>
+            <div class="safety-cards">
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="100"><div class="safety-icon"><i class="fas fa-ban"></i></div><div><h3 data-i18n="safety.c1.title">No Game Files Touched</h3><p data-i18n="safety.c1.desc">Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="200"><div class="safety-icon"><i class="fas fa-syringe"></i></div><div><h3 data-i18n="safety.c2.title">No File Injection</h3><p data-i18n="safety.c2.desc">Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="300"><div class="safety-icon"><i class="fas fa-user-secret"></i></div><div><h3 data-i18n="safety.c3.title">No Spyware &amp; No Tracking</h3><p data-i18n="safety.c3.desc">Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="400"><div class="safety-icon"><i class="fas fa-check-circle"></i></div><div><h3 data-i18n="safety.c4.title">100% Safe &amp; Clean</h3><p data-i18n="safety.c4.desc">Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section" id="faq"><div class="section-inner">
     <h2 class="section-title" data-aos="fade-up" data-i18n="faq.title">Frequently Asked Questions</h2><div class="gradient-line" data-aos="fade-up"></div>
     <div class="faq-list">
@@ -201,7 +304,7 @@
 </div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-const T={en:{'hero.badge':'SYSTEM OPTIMIZER','hero.title':'RCL System Monster v4.0','hero.subtitle':'Professional system optimization suite designed specifically for gamers. Deep cleaning, registry repair, FPS boosting, and automated maintenance.','hero.btn.download':'Download Now','hero.btn.backHome':'Back to Home','features.title':'Optimization Features','features.subtitle':'8 powerful tools to maximize your gaming performance','features.f1.title':'Deep Cleaning of 50+ Locations','features.f1.desc':'Comprehensive cleaning covers over 50 junk file locations including temp files, cache, logs, crash reports, and leftover files from uninstalled programs.','features.f2.title':'Registry Repair & Optimization','features.f2.desc':'Safe registry scanning and repair that fixes broken entries, removes orphaned keys, and optimizes Windows registry for better system performance.','features.f3.title':'Real-time Performance Monitoring','features.f3.desc':'Live dashboard shows CPU, RAM, GPU, and disk usage in real-time. Identify resource hogs and performance bottlenecks at a glance.','features.f4.title':'Startup & Services Optimizer','features.f4.desc':'Manage startup programs and Windows services with intelligent recommendations. Reduce boot time and free up system resources for gaming.','features.f5.title':'Game Mode — Boost FPS','features.f5.desc':'One-click Game Mode temporarily disables unnecessary background processes, services, and visual effects to maximize FPS and reduce input lag.','features.f6.title':'Privacy Cleaner','features.f6.desc':'Thorough browser history, cookie, cache, and tracking data cleaning. Supports Chrome, Firefox, Edge, and all major browsers.','features.f7.title':'Scheduled Auto-Scan & Clean','features.f7.desc':'Set up automatic cleaning schedules — daily, weekly, or monthly. Keep your system optimized without manual intervention.','features.f8.title':'Bilingual AR/EN Support','features.f8.desc':'Full Arabic and English interface with all notifications and reports available in both languages.','howItWorks.title':'How It Works','howItWorks.subtitle':'Get started in 4 simple steps','howItWorks.step1.title':'Download & Install','howItWorks.step1.desc':'Download System Monster and run the installer.','howItWorks.step2.title':'Choose Your Game Profile','howItWorks.step2.desc':'Select your gaming profile or let auto-detect find installed games.','howItWorks.step3.title':'Configure Settings','howItWorks.step3.desc':'Set up cleaning schedules, Game Mode, and monitoring.','howItWorks.step4.title':'Start Gaming!','howItWorks.step4.desc':'Activate Game Mode and enjoy maximum FPS.','pricing.title':'Pricing','pricing.subtitle':'One-time payment, lifetime access','pricing.lifetimeBadge':'Lifetime License','pricing.oneTime':'One-time payment — No subscription','pricing.total':'Total','pricing.btn':'Contact Me to Order','faq.title':'Frequently Asked Questions','faq.q1':'Is it safe to use?','faq.a1':'Yes, System Monster uses safe registry scanning with automatic backup and restore points.','faq.q2':'Which games are supported?','faq.a2':'System Monster works with ALL games — it optimizes at the OS level.','faq.q3':'How do I get updates?','faq.a3':'Through our Telegram channel (@RecoIlX). Lifetime license includes all future updates free.','faq.q4':'What if I need help?','faq.a4':'Contact us via Telegram, Gmail, or Facebook. Lifetime users get priority support.','modal.title':'Contact to Order','modal.lifetime':'Lifetime'},ar:{'hero.badge':'محسّن النظام','hero.title':'RCL System Monster v4.0','hero.subtitle':'حزمة تحسين النظام الاحترافية المصممة خصيصاً للاعبين. تنظيف عميق وإصلاح السجل وتعزيز FPS وصيانة آلية.','hero.btn.download':'تحميل الآن','hero.btn.backHome':'العودة للرئيسية','features.title':'مميزات التحسين','features.subtitle':'8 أدوات قوية لتعظيم أداء الألعاب','features.f1.title':'تنظيف عميق لأكثر من 50 موقع','features.f1.desc':'تنظيف شامل يغطي أكثر من 50 موقع ملفات غير ضرورية.','features.f2.title':'إصلاح وتحسين السجل','features.f2.desc':'مسح وإصلاح آمن للسجل يصلح المدخلات التالفة ويحسن أداء النظام.','features.f3.title':'مراقبة الأداء في الوقت الفعلي','features.f3.desc':'لوحة تحكم مباشرة تعرض استخدام المعالج والذاكرة وبطاقة الرسومات.','features.f4.title':'تحسين بدء التشغيل والخدمات','features.f4.desc':'إدارة برامج بدء التشغيل وخدمات ويندوز بتوصيات ذكية.','features.f5.title':'وضع الألعاب — تعزيز FPS','features.f5.desc':'وضع ألعاب بنقرة واحدة يعطل العمليات غير الضرورية لتعظيم FPS.','features.f6.title':'منظف الخصوصية','features.f6.desc':'تنظيف شامل لسجل المتصفح وملفات تعريف الارتباط والبيانات المتتبعة.','features.f7.title':'مسح آلي مجدول','features.f7.desc':'إعداد جداول تنظيف تلقائية — يومية أو أسبوعية أو شهرية.','features.f8.title':'دعم ثنائي اللغة عربي/إنجليزي','features.f8.desc':'واجهة كاملة بالعربية والإنجليزية مع جميع الإشعارات والتقارير.','howItWorks.title':'كيف يعمل','howItWorks.subtitle':'ابدأ في 4 خطوات','howItWorks.step1.title':'تحميل وتثبيت','howItWorks.step1.desc':'حمّل System Monster وشغّل المثبّت.','howItWorks.step2.title':'اختر ملف لعبتك','howItWorks.step2.desc':'اختر ملف الألعاب أو دع الاكتشاف التلقائي يلعب.','howItWorks.step3.title':'أعد الإعدادات','howItWorks.step3.desc':'اضبط جداول التنظيف ووضع الألعاب والمراقبة.','howItWorks.step4.title':'ابدأ اللعب!','howItWorks.step4.desc':'فعّل وضع الألعاب واستمتع بأقصى FPS.','pricing.title':'الأسعار','pricing.subtitle':'دفعة واحدة، وصول مدى الحياة','pricing.lifetimeBadge':'ترخيص مدى الحياة','pricing.oneTime':'دفعة واحدة — بدون اشتراك','pricing.total':'المجموع','pricing.btn':'تواصل معي للطلب','faq.title':'الأسئلة الشائعة','faq.q1':'هل هو آمن؟','faq.a1':'نعم، يستخدم System Monster مسح آمن للسجل مع نسخ احتياطي تلقائي.','faq.q2':'ما الألعاب المدعومة؟','faq.a2':'يعمل System Monster مع جميع الألعاب — يحسّن على مستوى النظام.','faq.q3':'كيف أحصل على التحديثات؟','faq.a3':'عبر قناة Telegram. الترخيص مدى الحياة يشمل جميع التحديثات مجاناً.','faq.q4':'ماذا لو احتجت مساعدة؟','faq.a4':'تواصل معنا عبر Telegram أو Gmail أو Facebook.','modal.title':'تواصل للطلب','modal.lifetime':'مدى الحياة'}};
+const T={en:{'safety.strip':'100% Safe — No game files touched · No file injection · No spyware','safety.title':'100% Safe & Trusted','safety.subtitle':'Your security comes first — full transparency about how our programs work','safety.c1.title':'No Game Files Touched','safety.c1.desc':'Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.','safety.c2.title':'No File Injection','safety.c2.desc':'Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.','safety.c3.title':'No Spyware & No Tracking','safety.c3.desc':'Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.','safety.c4.title':'100% Safe & Clean','safety.c4.desc':'Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.','nav.safety':'Safety','hero.badge':'SYSTEM OPTIMIZER','hero.title':'RCL System Monster v4.0','hero.subtitle':'Professional system optimization suite designed specifically for gamers. Deep cleaning, registry repair, FPS boosting, and automated maintenance.','hero.btn.download':'Download Now','hero.btn.backHome':'Back to Home','features.title':'Optimization Features','features.subtitle':'8 powerful tools to maximize your gaming performance','features.f1.title':'Deep Cleaning of 50+ Locations','features.f1.desc':'Comprehensive cleaning covers over 50 junk file locations including temp files, cache, logs, crash reports, and leftover files from uninstalled programs.','features.f2.title':'Registry Repair & Optimization','features.f2.desc':'Safe registry scanning and repair that fixes broken entries, removes orphaned keys, and optimizes Windows registry for better system performance.','features.f3.title':'Real-time Performance Monitoring','features.f3.desc':'Live dashboard shows CPU, RAM, GPU, and disk usage in real-time. Identify resource hogs and performance bottlenecks at a glance.','features.f4.title':'Startup & Services Optimizer','features.f4.desc':'Manage startup programs and Windows services with intelligent recommendations. Reduce boot time and free up system resources for gaming.','features.f5.title':'Game Mode — Boost FPS','features.f5.desc':'One-click Game Mode temporarily disables unnecessary background processes, services, and visual effects to maximize FPS and reduce input lag.','features.f6.title':'Privacy Cleaner','features.f6.desc':'Thorough browser history, cookie, cache, and tracking data cleaning. Supports Chrome, Firefox, Edge, and all major browsers.','features.f7.title':'Scheduled Auto-Scan & Clean','features.f7.desc':'Set up automatic cleaning schedules — daily, weekly, or monthly. Keep your system optimized without manual intervention.','features.f8.title':'Bilingual AR/EN Support','features.f8.desc':'Full Arabic and English interface with all notifications and reports available in both languages.','howItWorks.title':'How It Works','howItWorks.subtitle':'Get started in 4 simple steps','howItWorks.step1.title':'Download & Install','howItWorks.step1.desc':'Download System Monster and run the installer.','howItWorks.step2.title':'Choose Your Game Profile','howItWorks.step2.desc':'Select your gaming profile or let auto-detect find installed games.','howItWorks.step3.title':'Configure Settings','howItWorks.step3.desc':'Set up cleaning schedules, Game Mode, and monitoring.','howItWorks.step4.title':'Start Gaming!','howItWorks.step4.desc':'Activate Game Mode and enjoy maximum FPS.','pricing.title':'Pricing','pricing.subtitle':'One-time payment, lifetime access','pricing.lifetimeBadge':'Lifetime License','pricing.oneTime':'One-time payment — No subscription','pricing.total':'Total','pricing.btn':'Contact Me to Order','faq.title':'Frequently Asked Questions','faq.q1':'Is it safe to use?','faq.a1':'Yes, System Monster uses safe registry scanning with automatic backup and restore points.','faq.q2':'Which games are supported?','faq.a2':'System Monster works with ALL games — it optimizes at the OS level.','faq.q3':'How do I get updates?','faq.a3':'Through our Telegram channel (@RecoIlX). Lifetime license includes all future updates free.','faq.q4':'What if I need help?','faq.a4':'Contact us via Telegram, Gmail, or Facebook. Lifetime users get priority support.','modal.title':'Contact to Order','modal.lifetime':'Lifetime'},ar:{'safety.strip':'آمن 100% — لا نلمس ملفات الألعاب · لا حقن ملفات · لا تجسس','safety.title':'آمن وموثوق 100%','safety.subtitle':'أمانك يأتي أولاً — شفافية كاملة حول طريقة عمل برامجنا','safety.c1.title':'لا نلمس ملفات الألعاب','safety.c1.desc':'برامجنا لا تقرأ أو تعدّل أو تتدخل في ملفات الألعاب بأي شكل. تعمل بشكل مستقل تماماً بجانب لعبتك.','safety.c2.title':'لا حقن أي ملفات','safety.c2.desc':'لا يتم حقن أي ملفات ضارة في حاسوبك أو نظامك إطلاقاً. لا عمليات خفية، لا تعديلات على النظام، لا شيء مريب.','safety.c3.title':'لا تجسس ولا تتبع','safety.c3.desc':'صفر تجسس على نشاطك أو بياناتك. لا تسجيل لضغطات المفاتيح، لا جمع بيانات، لا تتبع خلفي من أي نوع.','safety.c4.title':'آمن ونظيف 100%','safety.c4.desc':'كل إصدار يُختبر ويُتحقق منه يدوياً قبل النشر. ما نَعِد به هو ما تحصل عليه بالضبط — ثقتك أهم شيء عندنا.','nav.safety':'الأمان','hero.badge':'محسّن النظام','hero.title':'RCL System Monster v4.0','hero.subtitle':'حزمة تحسين النظام الاحترافية المصممة خصيصاً للاعبين. تنظيف عميق وإصلاح السجل وتعزيز FPS وصيانة آلية.','hero.btn.download':'تحميل الآن','hero.btn.backHome':'العودة للرئيسية','features.title':'مميزات التحسين','features.subtitle':'8 أدوات قوية لتعظيم أداء الألعاب','features.f1.title':'تنظيف عميق لأكثر من 50 موقع','features.f1.desc':'تنظيف شامل يغطي أكثر من 50 موقع ملفات غير ضرورية.','features.f2.title':'إصلاح وتحسين السجل','features.f2.desc':'مسح وإصلاح آمن للسجل يصلح المدخلات التالفة ويحسن أداء النظام.','features.f3.title':'مراقبة الأداء في الوقت الفعلي','features.f3.desc':'لوحة تحكم مباشرة تعرض استخدام المعالج والذاكرة وبطاقة الرسومات.','features.f4.title':'تحسين بدء التشغيل والخدمات','features.f4.desc':'إدارة برامج بدء التشغيل وخدمات ويندوز بتوصيات ذكية.','features.f5.title':'وضع الألعاب — تعزيز FPS','features.f5.desc':'وضع ألعاب بنقرة واحدة يعطل العمليات غير الضرورية لتعظيم FPS.','features.f6.title':'منظف الخصوصية','features.f6.desc':'تنظيف شامل لسجل المتصفح وملفات تعريف الارتباط والبيانات المتتبعة.','features.f7.title':'مسح آلي مجدول','features.f7.desc':'إعداد جداول تنظيف تلقائية — يومية أو أسبوعية أو شهرية.','features.f8.title':'دعم ثنائي اللغة عربي/إنجليزي','features.f8.desc':'واجهة كاملة بالعربية والإنجليزية مع جميع الإشعارات والتقارير.','howItWorks.title':'كيف يعمل','howItWorks.subtitle':'ابدأ في 4 خطوات','howItWorks.step1.title':'تحميل وتثبيت','howItWorks.step1.desc':'حمّل System Monster وشغّل المثبّت.','howItWorks.step2.title':'اختر ملف لعبتك','howItWorks.step2.desc':'اختر ملف الألعاب أو دع الاكتشاف التلقائي يلعب.','howItWorks.step3.title':'أعد الإعدادات','howItWorks.step3.desc':'اضبط جداول التنظيف ووضع الألعاب والمراقبة.','howItWorks.step4.title':'ابدأ اللعب!','howItWorks.step4.desc':'فعّل وضع الألعاب واستمتع بأقصى FPS.','pricing.title':'الأسعار','pricing.subtitle':'دفعة واحدة، وصول مدى الحياة','pricing.lifetimeBadge':'ترخيص مدى الحياة','pricing.oneTime':'دفعة واحدة — بدون اشتراك','pricing.total':'المجموع','pricing.btn':'تواصل معي للطلب','faq.title':'الأسئلة الشائعة','faq.q1':'هل هو آمن؟','faq.a1':'نعم، يستخدم System Monster مسح آمن للسجل مع نسخ احتياطي تلقائي.','faq.q2':'ما الألعاب المدعومة؟','faq.a2':'يعمل System Monster مع جميع الألعاب — يحسّن على مستوى النظام.','faq.q3':'كيف أحصل على التحديثات؟','faq.a3':'عبر قناة Telegram. الترخيص مدى الحياة يشمل جميع التحديثات مجاناً.','faq.q4':'ماذا لو احتجت مساعدة؟','faq.a4':'تواصل معنا عبر Telegram أو Gmail أو Facebook.','modal.title':'تواصل للطلب','modal.lifetime':'مدى الحياة'}};
 let L='en';
 function switchLang(l){L=l;document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');document.documentElement.setAttribute('lang',l);document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(T[l]&&T[l][k])el.innerHTML=T[l][k];});}
 function toggleMobile(){document.getElementById('mobileMenu').classList.toggle('active');document.getElementById('hamburger').classList.toggle('active');document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('active')?'hidden':'';}
@@ -214,6 +317,34 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeContact
 function toggleFaq(el){el.parentElement.classList.toggle('active');}
 (function(){const c=document.getElementById('particles-container'),cols=['#ff2d75','#ff6b9d','#00ff88','#FFD700','#00ccff'];for(let i=0;i<30;i++){const p=document.createElement('div');p.className='particle';const s=Math.random()*4+2;p.style.cssText='width:'+s+'px;height:'+s+'px;background:'+cols[Math.floor(Math.random()*cols.length)]+';left:'+Math.random()*100+'%;animation-duration:'+(Math.random()*15+10)+'s;animation-delay:'+(Math.random()*15)+'s;';c.appendChild(p);}})();
 AOS.init({duration:800,once:true});
+</script>
+
+<script>
+/* RecoilX enhancements: lang persistence + dynamic year + mobile particles */
+(function(){
+    try {
+        var origSwitch = window.switchLang;
+        if (typeof origSwitch === 'function') {
+            window.switchLang = function(lang){
+                try { localStorage.setItem('recolx_lang', lang); } catch(e) {}
+                return origSwitch.apply(this, arguments);
+            };
+        }
+        var saved = localStorage.getItem('recolx_lang');
+        if (!saved) {
+            var nav = (navigator.language || 'en').toLowerCase();
+            saved = (nav.indexOf('ar') === 0) ? 'ar' : 'en';
+        }
+        if (saved && saved !== 'en' && typeof window.switchLang === 'function') {
+            window.switchLang(saved);
+        }
+    } catch(e) {}
+
+    /* dynamic copyright year */
+    document.querySelectorAll('.copyright p').forEach(function(p){
+        p.innerHTML = p.innerHTML.replace(/20\d{2}/, new Date().getFullYear());
+    });
+})();
 </script>
 </body>
 </html>

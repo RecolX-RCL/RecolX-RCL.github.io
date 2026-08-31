@@ -4,6 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecoilX - Advanced Recoil Control & Detection System</title>
+    <meta name="description" content="RecoilX — advanced recoil control &amp; auto-detection system for PUBG, APEX Legends, Call of Duty and more. 10 game profiles, anti-detection technology, plans from $3/month.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://recolx-rcl.github.io/">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RecoilX">
+    <meta property="og:title" content="RecoilX — Advanced Recoil Control &amp; Detection System">
+    <meta property="og:description" content="RecoilX — advanced recoil control &amp; auto-detection system for PUBG, APEX Legends, Call of Duty and more. 10 game profiles, anti-detection technology, plans from $3/month.">
+    <meta property="og:url" content="https://recolx-rcl.github.io/">
+    <meta property="og:image" content="https://recolx-rcl.github.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RecoilX — Advanced Recoil Control &amp; Detection System">
+    <meta name="twitter:description" content="RecoilX — advanced recoil control &amp; auto-detection system for PUBG, APEX Legends, Call of Duty and more. 10 game profiles, anti-detection technology, plans from $3/month.">
+    <meta name="twitter:image" content="https://recolx-rcl.github.io/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "RecoilX",
+  "url": "https://recolx-rcl.github.io/",
+  "description": "Advanced recoil control & detection system for FPS games",
+  "inLanguage": [
+    "en",
+    "ar"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RecoilX",
+  "url": "https://recolx-rcl.github.io/",
+  "email": "rclrecolx@gmail.com",
+  "sameAs": [
+    "https://www.youtube.com/@recolxx",
+    "https://t.me/RecoIlX",
+    "https://www.facebook.com/recolx"
+  ]
+}
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1712,7 +1763,154 @@
             .section { padding: 60px 16px; }
             .hero { padding: 100px 16px 60px; }
         }
-    </style>
+
+        /* ====== TRUST STATS BAR ====== */
+        .stats-bar { max-width: 1200px; margin: -10px auto 40px; padding: 0 24px; }
+        .stats-bar-inner {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+            background: var(--glass); border: 1px solid var(--border);
+            border-radius: 20px; padding: 22px 24px; backdrop-filter: blur(20px);
+        }
+        .stat-item { display: flex; align-items: center; gap: 14px; justify-content: center; }
+        .stat-icon {
+            width: 48px; height: 48px; border-radius: 14px; display: flex;
+            align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+        }
+        .stat-icon.green  { background: rgba(0,255,136,.12); color: var(--primary);   box-shadow: 0 0 18px rgba(0,255,136,.15); }
+        .stat-icon.blue   { background: rgba(0,204,255,.12); color: var(--secondary); box-shadow: 0 0 18px rgba(0,204,255,.15); }
+        .stat-icon.pink   { background: rgba(255,45,117,.12); color: var(--accent);   box-shadow: 0 0 18px rgba(255,45,117,.15); }
+        .stat-icon.purple { background: rgba(168,85,247,.12); color: var(--purple);   box-shadow: 0 0 18px rgba(168,85,247,.15); }
+        .stat-value {
+            font-size: 1.45rem; font-weight: 800; line-height: 1.2;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .stat-label { font-size: .82rem; color: var(--text-muted); font-weight: 500; white-space: nowrap; }
+        @media (max-width: 900px) { .stats-bar-inner { grid-template-columns: repeat(2, 1fr); } .stat-item { justify-content: flex-start; } }
+        @media (max-width: 480px) { .stats-bar { padding: 0 12px; } .stat-value { font-size: 1.2rem; } .stat-label { font-size: .72rem; } }
+
+        /* ====== HOW TO ORDER ====== */
+        .order-steps {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+            max-width: 1000px; margin: 44px auto 0;
+        }
+        .order-step {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 20px; padding: 30px 22px; text-align: center;
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+        .order-step:hover { transform: translateY(-6px); border-color: rgba(0,255,136,.35); box-shadow: 0 12px 32px rgba(0,255,136,.08); }
+        .order-step-num {
+            width: 46px; height: 46px; margin: 0 auto 14px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--bg); font-weight: 800; font-size: 1.25rem;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 0 20px rgba(0,255,136,.3);
+        }
+        .order-step h3 { font-size: 1.05rem; margin-bottom: 8px; }
+        .order-step p { font-size: .88rem; color: var(--text-muted); line-height: 1.65; }
+        @media (max-width: 768px) { .order-steps { grid-template-columns: 1fr; max-width: 420px; } }
+
+        /* ====== FAQ ====== */
+        .faq-list { max-width: 820px; margin: 44px auto 0; }
+        .faq-item {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 16px; margin-bottom: 12px; overflow: hidden;
+            transition: border-color .3s ease;
+        }
+        .faq-item.active { border-color: rgba(0,255,136,.35); }
+        .faq-question {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 18px 22px; cursor: pointer; font-weight: 600; font-size: 1rem;
+            gap: 12px; user-select: none;
+        }
+        .faq-question:hover { color: var(--primary); }
+        .faq-question i { transition: transform .3s ease; color: var(--primary); flex-shrink: 0; font-size: .9rem; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .faq-answer-inner { padding: 0 22px 18px; color: var(--text-muted); font-size: .92rem; line-height: 1.7; }
+        [dir="rtl"] .faq-question { flex-direction: row-reverse; text-align: right; }
+        [dir="rtl"] .stat-item { flex-direction: row-reverse; }
+    
+        /* ===== v2: program card media ===== */
+        .program-card-media{margin:-28px -28px 20px;border-radius:19px 19px 0 0;overflow:hidden;position:relative;border-bottom:1px solid var(--border);background:var(--bg)}
+        .program-card-media img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .5s ease}
+        .program-card:hover .program-card-media img{transform:scale(1.07)}
+        .program-card-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 55%,rgba(10,10,15,.5));pointer-events:none}
+
+        /* ===== v2: hero visual + safety strip ===== */
+        .safety-strip{display:inline-flex;align-items:center;gap:10px;margin-top:8px;padding:10px 22px;border-radius:50px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.3);color:var(--primary);font-size:.88rem;font-weight:600;backdrop-filter:blur(10px)}
+        .safety-strip i{font-size:1rem}
+        .hero-visual{position:relative;max-width:720px;margin:36px auto 0;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 24px 80px rgba(0,255,136,.12)}
+        .hero-visual img{width:100%;display:block}
+        .hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0) 60%,rgba(10,10,15,.55));pointer-events:none}
+        @media(max-width:640px){.safety-strip{font-size:.72rem;padding:8px 14px;gap:8px}.safety-strip span{white-space:normal;line-height:1.4}}
+
+        /* ===== v2: safety section ===== */
+        .safety-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;margin-top:12px}
+        .safety-visual{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(0,255,136,.25);box-shadow:0 20px 60px rgba(0,255,136,.1)}
+        .safety-visual img{width:100%;display:block}
+        .safety-cards{display:flex;flex-direction:column;gap:16px}
+        .safety-card{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;transition:all .3s ease}
+        .safety-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,255,136,.08)}
+        .safety-icon{flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(0,255,136,.15),rgba(0,204,255,.15));display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.15rem;border:1px solid rgba(0,255,136,.2)}
+        .safety-card h3{font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--text)}
+        .safety-card p{color:var(--text-muted);font-size:.88rem;line-height:1.6;text-align:start}
+        @media(max-width:900px){.safety-grid{grid-template-columns:1fr}.safety-visual{max-width:520px;margin:0 auto}}
+
+        /* v2 fix: hero media wrapper */
+        .hero{flex-wrap:wrap;row-gap:36px}
+        .hero-media{display:flex;flex-direction:column;align-items:center;gap:18px;flex:1 1 340px;min-width:280px}
+        .hero-media .hero-visual{margin:0;width:100%}
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it safe to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our advanced anti-detection technology operates at the hardware level with a minimal footprint, keeping you safe while you play. We continuously update our protection methods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which games are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PUBG Steam, PUBG Mobile (emulator), APEX Legends, Call of Duty, Valorant, Fortnite, Warzone and more. Each game has a dedicated profile optimized for its recoil patterns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I order and pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pick a plan, click Contact Me and message us on Telegram or email. We usually reply within a few hours with payment and activation steps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get updates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All updates are delivered through our Telegram channel (@RecoIlX) and are included free with your subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I need help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide 24/7 support via Telegram (@RecoIlX), Gmail (rclrecolx@gmail.com) and Facebook (/recolx). Video tutorials are also available on YouTube."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body>
 
@@ -1735,6 +1933,7 @@
                 <li><a href="#analytics" data-i18n="nav.analytics">Analytics</a></li>
                 <li><a href="#programs" data-i18n="nav.programs">Programs</a></li>
                 <li><a href="#videos" data-i18n="nav.videos">Videos</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -1759,6 +1958,7 @@
     <a href="#analytics" onclick="closeMobile()" data-i18n="nav.analytics">Analytics</a>
     <a href="#programs" onclick="closeMobile()" data-i18n="nav.programs">Programs</a>
     <a href="#videos" onclick="closeMobile()" data-i18n="nav.videos">Videos</a>
+    <a href="#faq" onclick="closeMobile()" data-i18n="nav.faq">FAQ</a>
     <div style="display:flex;gap:8px;margin-top:16px;">
         <button class="lang-btn active" data-lang="en" onclick="switchLang('en');closeMobile();" style="padding:12px 24px;font-size:1rem;">EN</button>
         <button class="lang-btn" data-lang="ar" onclick="switchLang('ar');closeMobile();" style="padding:12px 24px;font-size:1rem;">AR</button>
@@ -1784,16 +1984,25 @@
                 <i class="fas fa-play"></i>
                 <span data-i18n="hero.btn.videos">Watch Videos</span>
             </a>
-            <a href="https://drive.usercontent.google.com/download?id=14U5mW5zes0k02QPMzwlwpUChGpgHhrNH&export=download&authuser=0&confirm=t&uuid=f2dc09bf-db10-4e72-bd27-fcc21eece8bf&at=ANTm3cwe_0ntiUYwNzbUWA36YBj4%3A1766610514952" class="btn-hero btn-hero-pink" target="_blank" rel="noopener">
+            <a href="https://drive.usercontent.google.com/download?id=14U5mW5zes0k02QPMzwlwpUChGpgHhrNH&export=download&confirm=t" class="btn-hero btn-hero-pink" target="_blank" rel="noopener">
                 <i class="fas fa-download"></i>
                 <span data-i18n="hero.btn.download">Download</span>
             </a>
-            <a href="https://drive.usercontent.google.com/download?id=1tessw7sRnOprfoyN6kighbVqhqehk-fR&export=download&authuser=0&confirm=t&uuid=2572debf-024b-4f9b-abc2-ec9758cd476f&at=ALBwUgluYSZEew7JAxedhPl3oSxG:1779812165010cf3ec6-10e6-42e5-ae51-712eeff8681e&at=AGN2oQ2rualCuhodOQgLUCDezz-O:1774388652934" class="btn-hero btn-hero-purple" target="_blank" rel="noopener">
+            <a href="https://drive.usercontent.google.com/download?id=1tessw7sRnOprfoyN6kighbVqhqehk-fR&export=download&confirm=t" class="btn-hero btn-hero-purple" target="_blank" rel="noopener">
                 <i class="fas fa-computer-mouse"></i>
                 <span data-i18n="hero.btn.helper">Mouse Shortcuts Helper</span>
             </a>
         </div>
         <div class="hero-float-cards" data-aos="fade-up" data-aos-delay="600">
+            <div class="hero-float-card">
+                <div class="icon green">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h4 data-i18n="hero.floatsafe.title">100% Safe</h4>
+                    <p data-i18n="hero.floatsafe.desc">No injection · No spyware</p>
+                </div>
+            </div>
             <div class="hero-float-card">
                 <div class="icon green">
                     <i class="fas fa-gamepad"></i>
@@ -1815,6 +2024,28 @@
         </div>
     </div>
 </section>
+
+<!-- TRUST STATS -->
+<div class="stats-bar" data-aos="fade-up">
+    <div class="stats-bar-inner">
+        <div class="stat-item">
+            <div class="stat-icon green"><i class="fas fa-gamepad"></i></div>
+            <div><div class="stat-value">10+</div><div class="stat-label" data-i18n="stats.s1">Game Profiles</div></div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon blue"><i class="fas fa-layer-group"></i></div>
+            <div><div class="stat-value">7</div><div class="stat-label" data-i18n="stats.s2">Premium Programs</div></div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon pink"><i class="fas fa-headset"></i></div>
+            <div><div class="stat-value">24/7</div><div class="stat-label" data-i18n="stats.s3">Live Support</div></div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon purple"><i class="fas fa-gift"></i></div>
+            <div><div class="stat-value">2</div><div class="stat-label" data-i18n="stats.s4">Free Tools</div></div>
+        </div>
+    </div>
+</div>
 
 <!-- PROMO BANNER - RecolX Store -->
 <div class="promo-banner" id="promoBanner">
@@ -1918,24 +2149,24 @@
                     <span>Zoom Mode</span>
                 </div>
                 <div class="game-card" onclick="selectGame(this)">
-                    <i class="fas fa-explosion"></i>
-                    <span>Game 4</span>
+                    <i class="fas fa-fire-flame-curved"></i>
+                    <span>Valorant</span>
                 </div>
                 <div class="game-card" onclick="selectGame(this)">
-                    <i class="fas fa-skull-crossbones"></i>
-                    <span>Game 7</span>
+                    <i class="fas fa-bolt-lightning"></i>
+                    <span>Fortnite</span>
                 </div>
                 <div class="game-card" onclick="selectGame(this)">
-                    <i class="fas fa-shield"></i>
-                    <span>Game 8</span>
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Rainbow Six</span>
                 </div>
                 <div class="game-card" onclick="selectGame(this)">
-                    <i class="fas fa-ghost"></i>
-                    <span>Game 9</span>
+                    <i class="fas fa-parachute-box"></i>
+                    <span>Warzone</span>
                 </div>
                 <div class="game-card" onclick="selectGame(this)">
-                    <i class="fas fa-fire"></i>
-                    <span>Game 10</span>
+                    <i class="fas fa-jet-fighter"></i>
+                    <span>Delta Force</span>
                 </div>
             </div>
         </div>
@@ -2032,7 +2263,52 @@
     </div>
 </section>
 
+<!-- HOW TO ORDER -->
+<section class="section" id="how-to-order" style="padding-bottom:20px;">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="order.title">How to Order</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <p class="section-subtitle" data-aos="fade-up" data-i18n="order.subtitle">Get your license in 3 simple steps</p>
+        <div class="order-steps">
+            <div class="order-step" data-aos="fade-up" data-aos-delay="100">
+                <div class="order-step-num">1</div>
+                <h3 data-i18n="order.step1.title">Choose Your Plan</h3>
+                <p data-i18n="order.step1.desc">Browse our programs below and pick the plan that fits your games and budget.</p>
+            </div>
+            <div class="order-step" data-aos="fade-up" data-aos-delay="200">
+                <div class="order-step-num">2</div>
+                <h3 data-i18n="order.step2.title">Contact Us</h3>
+                <p data-i18n="order.step2.desc">Click "Contact Me" and message us on Telegram, Gmail or Facebook with your order.</p>
+            </div>
+            <div class="order-step" data-aos="fade-up" data-aos-delay="300">
+                <div class="order-step-num">3</div>
+                <h3 data-i18n="order.step3.title">Get Your License</h3>
+                <p data-i18n="order.step3.desc">Complete the payment and receive your license, download link and setup help.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- PROGRAMS -->
+
+<!-- SAFETY / TRUST 100% (v2) -->
+<section class="section" id="safety">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="safety.title">100% Safe &amp; Trusted</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <p class="section-subtitle" data-aos="fade-up" data-i18n="safety.subtitle">Your security comes first — full transparency about how our programs work</p>
+        <div class="safety-grid">
+            <div class="safety-visual" data-aos="zoom-in" data-aos-delay="100"><img src="images/safety-shield.png" alt="100% Safe Shield" loading="lazy"></div>
+            <div class="safety-cards">
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="100"><div class="safety-icon"><i class="fas fa-ban"></i></div><div><h3 data-i18n="safety.c1.title">No Game Files Touched</h3><p data-i18n="safety.c1.desc">Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="200"><div class="safety-icon"><i class="fas fa-syringe"></i></div><div><h3 data-i18n="safety.c2.title">No File Injection</h3><p data-i18n="safety.c2.desc">Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="300"><div class="safety-icon"><i class="fas fa-user-secret"></i></div><div><h3 data-i18n="safety.c3.title">No Spyware &amp; No Tracking</h3><p data-i18n="safety.c3.desc">Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.</p></div></div>
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="400"><div class="safety-icon"><i class="fas fa-check-circle"></i></div><div><h3 data-i18n="safety.c4.title">100% Safe &amp; Clean</h3><p data-i18n="safety.c4.desc">Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section" id="programs">
     <div class="section-inner">
         <h2 class="section-title" data-aos="fade-up" data-i18n="programs.title">Our Programs</h2>
@@ -2041,7 +2317,7 @@
         <div class="programs-grid">
 
             <!-- Program 1: RCL Scope Stabilizer PRO v8.6 -->
-            <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="100"><div class="program-card-media"><img src="images/rcl-scope-pro.png" alt="RCL Scope Stabilizer PRO" loading="lazy"></div>
                 <span class="program-badge badge-new" data-i18n="programs.badge.new">NEW RELEASE</span>
                 <h3>RCL Scope Stabilizer PRO v8.6</h3>
                 <p class="version" data-i18n="programs.p1.version">Latest Version — Updated Features</p>
@@ -2077,7 +2353,7 @@
             </div>
 
             <!-- Program 2: RCL Scope Stabilizer ULTIMATE -->
-            <div class="program-card gold-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-card gold-card" data-aos="fade-up" data-aos-delay="200"><div class="program-card-media"><img src="images/rcl-scope-ultimate.png" alt="RCL Scope Stabilizer ULTIMATE" loading="lazy"></div>
                 <span class="program-badge badge-ultimate" data-i18n="programs.badge.ultimate">⚡ ULTIMATE</span>
                 <h3>RCL Scope Stabilizer ULTIMATE</h3>
                 <p class="version" data-i18n="programs.p2.version">Premium Edition — All Features Unlocked</p>
@@ -2110,7 +2386,7 @@
             </div>
 
             <!-- Program 3: RecolX Pro -->
-            <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="300"><div class="program-card-media"><img src="images/recolx-pro.png" alt="RecolX Pro" loading="lazy"></div>
                 <span class="program-badge badge-popular" data-i18n="programs.badge.popular">Most Popular</span>
                 <h3>RecolX Pro</h3>
                 <p class="version" data-i18n="programs.p3.version">Lightweight — Essential Features</p>
@@ -2140,7 +2416,7 @@
             </div>
 
             <!-- Program 4: RCL.V9 -->
-            <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="400"><div class="program-card-media"><img src="images/rcl-v9.png" alt="RCL.V9" loading="lazy"></div>
                 <span class="program-badge badge-value" data-i18n="programs.badge.value">Best Value</span>
                 <h3>RCL.V9</h3>
                 <p class="version" data-i18n="programs.p4.version">Final Version — Complete Package</p>
@@ -2174,7 +2450,7 @@
             </div>
 
             <!-- Program 5: RCL System Monster v4.0 -->
-            <div class="program-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="500"><div class="program-card-media"><img src="images/rcl-system-monster.png" alt="RCL System Monster" loading="lazy"></div>
                 <span class="program-badge badge-new" data-i18n="programs.badge.lifetime">LIFETIME</span>
                 <h3>RCL System Monster v4.0</h3>
                 <p class="version" data-i18n="programs.p5.version">System Optimizer — One-Time Payment</p>
@@ -2203,7 +2479,7 @@
             </div>
 
             <!-- Program 7: Windows Command Center Pro (Monthly) -->
-            <div class="program-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="700"><div class="program-card-media"><img src="images/wincmd-pro.png" alt="Windows Command Center Pro" loading="lazy"></div>
                 <span class="program-badge badge-new" data-i18n="programs.badge.new">NEW RELEASE</span>
                 <h3 data-i18n="programs.p7.title">Windows Command Center Pro</h3>
                 <p class="version" data-i18n="programs.p7.version">140+ Windows Commands — Essential Tool</p>
@@ -2237,7 +2513,7 @@
             </div>
 
             <!-- Program 8: Windows Command Center Pro (Lifetime) -->
-            <div class="program-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="800"><div class="program-card-media"><img src="images/wincmd-pro.png" alt="Windows Command Center Pro Lifetime" loading="lazy"></div>
                 <span class="program-badge badge-new" data-i18n="programs.badge.lifetime">LIFETIME</span>
                 <h3 data-i18n="programs.p8.title">Windows Command Center Pro</h3>
                 <p class="version" data-i18n="programs.p8.version">Permanent License — One-Time Payment</p>
@@ -2266,7 +2542,7 @@
             </div>
 
             <!-- Program 6: Scope PRO + System Monster Bundle -->
-            <div class="program-card pink-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="program-card pink-card" data-aos="fade-up" data-aos-delay="600"><div class="program-card-media"><img src="images/bundle.png" alt="Scope PRO + System Monster Bundle" loading="lazy"></div>
                 <span class="program-badge badge-exclusive" data-i18n="programs.badge.exclusive">🔥 EXCLUSIVE</span>
                 <h3 data-i18n="programs.p6.title">Scope PRO + System Monster Bundle</h3>
                 <p class="version" data-i18n="programs.p6.version">Best of Both Worlds — Limited Offer</p>
@@ -2326,6 +2602,51 @@
                     <h3 data-i18n="videos.v2.title">Advanced Features Demo</h3>
                     <p data-i18n="videos.v2.desc">Deep dive into detection maker and custom profiles</p>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="faq.title">Frequently Asked Questions</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <div class="faq-list">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq.q1">Is it safe to use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a1">Yes. Our advanced anti-detection technology operates at the hardware level with a minimal footprint, keeping you safe while you play. We continuously update our protection methods.</div></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq.q2">Which games are supported?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a2">PUBG Steam, PUBG Mobile (emulator), APEX Legends, Call of Duty, Valorant, Fortnite, Warzone and more. Each game has a dedicated profile optimized for its recoil patterns.</div></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq.q3">How do I order and pay?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a3">Pick a plan, click "Contact Me" and message us on Telegram or email. We usually reply within a few hours with payment and activation steps.</div></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq.q4">How do I get updates?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a4">All updates are delivered through our Telegram channel (@RecoIlX) and are included free with your subscription.</div></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq.q5">What if I need help?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.a5">We provide 24/7 support via Telegram (@RecoIlX), Gmail (rclrecolx@gmail.com) and Facebook (/recolx). Video tutorials are also available on YouTube.</div></div>
             </div>
         </div>
     </div>
@@ -2430,7 +2751,7 @@
 <script>
 // ====== TRANSLATIONS ======
 const translations = {
-    en: {
+    en: {'hero.floatsafe.title':'100% Safe','hero.floatsafe.desc':'No injection · No spyware','safety.strip':'100% Safe — No game files touched · No file injection · No spyware','safety.title':'100% Safe & Trusted','safety.subtitle':'Your security comes first — full transparency about how our programs work','safety.c1.title':'No Game Files Touched','safety.c1.desc':'Our programs never read, modify, or interfere with game files in any way. They work completely independently alongside your game.','safety.c2.title':'No File Injection','safety.c2.desc':'Nothing harmful is ever injected into your computer or system. No hidden processes, no system modifications, nothing suspicious.','safety.c3.title':'No Spyware & No Tracking','safety.c3.desc':'Zero spying on your activity or your data. No keyloggers, no data collection, no background tracking of any kind.','safety.c4.title':'100% Safe & Clean','safety.c4.desc':'Every release is manually tested and verified clean before publishing. What we promise is exactly what you get — your trust matters most.','nav.safety':'Safety',
         'promo.text': 'Top up your games & apps at <span class="highlight">RecolX Store</span>',
         'promo.tag': 'HOT OFFER',
         'promo.btn': 'Visit Store',
@@ -2593,9 +2914,33 @@ const translations = {
         'modal.program': 'Program',
         'modal.duration': 'Duration',
         'modal.pricePerMonth': 'Price/month',
-        'modal.totalPrice': 'Total Price'
+        'modal.totalPrice': 'Total Price',
+        'nav.faq': 'FAQ',
+        'stats.s1': 'Game Profiles',
+        'stats.s2': 'Premium Programs',
+        'stats.s3': 'Live Support',
+        'stats.s4': 'Free Tools',
+        'order.title': 'How to Order',
+        'order.subtitle': 'Get your license in 3 simple steps',
+        'order.step1.title': 'Choose Your Plan',
+        'order.step1.desc': 'Browse our programs below and pick the plan that fits your games and budget.',
+        'order.step2.title': 'Contact Us',
+        'order.step2.desc': 'Click "Contact Me" and message us on Telegram, Gmail or Facebook with your order.',
+        'order.step3.title': 'Get Your License',
+        'order.step3.desc': 'Complete the payment and receive your license, download link and setup help.',
+        'faq.title': 'Frequently Asked Questions',
+        'faq.q1': 'Is it safe to use?',
+        'faq.a1': 'Yes. Our advanced anti-detection technology operates at the hardware level with a minimal footprint, keeping you safe while you play. We continuously update our protection methods.',
+        'faq.q2': 'Which games are supported?',
+        'faq.a2': 'PUBG Steam, PUBG Mobile (emulator), APEX Legends, Call of Duty, Valorant, Fortnite, Warzone and more. Each game has a dedicated profile optimized for its recoil patterns.',
+        'faq.q3': 'How do I order and pay?',
+        'faq.a3': 'Pick a plan, click "Contact Me" and message us on Telegram or email. We usually reply within a few hours with payment and activation steps.',
+        'faq.q4': 'How do I get updates?',
+        'faq.a4': 'All updates are delivered through our Telegram channel (@RecoIlX) and are included free with your subscription.',
+        'faq.q5': 'What if I need help?',
+        'faq.a5': 'We provide 24/7 support via Telegram (@RecoIlX), Gmail (rclrecolx@gmail.com) and Facebook (/recolx). Video tutorials are also available on YouTube.'
     },
-    ar: {
+    ar: {'hero.floatsafe.title':'آمن 100%','hero.floatsafe.desc':'لا حقن · لا تجسس','safety.strip':'آمن 100% — لا نلمس ملفات الألعاب · لا حقن ملفات · لا تجسس','safety.title':'آمن وموثوق 100%','safety.subtitle':'أمانك يأتي أولاً — شفافية كاملة حول طريقة عمل برامجنا','safety.c1.title':'لا نلمس ملفات الألعاب','safety.c1.desc':'برامجنا لا تقرأ أو تعدّل أو تتدخل في ملفات الألعاب بأي شكل. تعمل بشكل مستقل تماماً بجانب لعبتك.','safety.c2.title':'لا حقن أي ملفات','safety.c2.desc':'لا يتم حقن أي ملفات ضارة في حاسوبك أو نظامك إطلاقاً. لا عمليات خفية، لا تعديلات على النظام، لا شيء مريب.','safety.c3.title':'لا تجسس ولا تتبع','safety.c3.desc':'صفر تجسس على نشاطك أو بياناتك. لا تسجيل لضغطات المفاتيح، لا جمع بيانات، لا تتبع خلفي من أي نوع.','safety.c4.title':'آمن ونظيف 100%','safety.c4.desc':'كل إصدار يُختبر ويُتحقق منه يدوياً قبل النشر. ما نَعِد به هو ما تحصل عليه بالضبط — ثقتك أهم شيء عندنا.','nav.safety':'الأمان',
         'promo.text': 'شحن ألعابك وتطبيقاتك من <span class="highlight">متجر RecolX</span>',
         'promo.tag': 'عرض حار',
         'promo.btn': 'زيارة المتجر',
@@ -2758,7 +3103,31 @@ const translations = {
         'modal.program': 'البرنامج',
         'modal.duration': 'المدة',
         'modal.pricePerMonth': 'السعر/شهر',
-        'modal.totalPrice': 'السعر الإجمالي'
+        'modal.totalPrice': 'السعر الإجمالي',
+        'nav.faq': 'الأسئلة الشائعة',
+        'stats.s1': 'ملفات ألعاب',
+        'stats.s2': 'برامج مميزة',
+        'stats.s3': 'دعم مباشر',
+        'stats.s4': 'أدوات مجانية',
+        'order.title': 'كيف تطلب؟',
+        'order.subtitle': 'احصل على ترخيصك في 3 خطوات بسيطة',
+        'order.step1.title': 'اختر خطتك',
+        'order.step1.desc': 'تصفح برامجنا واختر الخطة المناسبة لألعابك وميزانيتك.',
+        'order.step2.title': 'تواصل معنا',
+        'order.step2.desc': 'اضغط "تواصل معي" وأرسل لنا رسالة عبر تيليجرام أو البريد الإلكتروني أو فيسبوك.',
+        'order.step3.title': 'استلم ترخيصك',
+        'order.step3.desc': 'أكمل الدفع واستلم ترخيصك ورابط التحميل مع مساعدة في الإعداد.',
+        'faq.title': 'الأسئلة الشائعة',
+        'faq.q1': 'هل هو آمن؟',
+        'faq.a1': 'نعم. تقنية مكافحة الاكتشاف المتقدمة لدينا تعمل على مستوى الأجهزة ببصمة ضئيلة، ما يحافظ على أمانك أثناء اللعب، ونحدّث أساليب الحماية باستمرار.',
+        'faq.q2': 'ما الألعاب المدعومة؟',
+        'faq.a2': 'PUBG Steam و PUBG Mobile (محاكي) و APEX Legends و Call of Duty و Valorant و Fortnite و Warzone والمزيد. كل لعبة لديها ملف مخصص مضبوط لأنماط ارتدادها.',
+        'faq.q3': 'كيف أطلب وأدفع؟',
+        'faq.a3': 'اختر الخطة واضغط "تواصل معي" وأرسل لنا رسالة عبر تيليجرام أو البريد الإلكتروني. نرد عادةً خلال ساعات قليلة مع خطوات الدفع والتفعيل.',
+        'faq.q4': 'كيف أحصل على التحديثات؟',
+        'faq.a4': 'جميع التحديثات تصل عبر قناة تيليجرام (@RecoIlX) ومشمولة مجاناً مع اشتراكك.',
+        'faq.q5': 'ماذا لو احتجت مساعدة؟',
+        'faq.a5': 'نوفر دعماً على مدار الساعة عبر تيليجرام (@RecoIlX) والبريد الإلكتروني (rclrecolx@gmail.com) وفيسبوك (/recolx)، مع دروس فيديو على قناة يوتيوب.'
     }
 };
 
@@ -3029,6 +3398,65 @@ document.addEventListener('DOMContentLoaded', () => {
         offset: 80
     });
 });
+</script>
+
+<script>
+/* RecoilX enhancements: lang persistence + dynamic year + mobile particles */
+(function(){
+    try {
+        var origSwitch = window.switchLang;
+        if (typeof origSwitch === 'function') {
+            window.switchLang = function(lang){
+                try { localStorage.setItem('recolx_lang', lang); } catch(e) {}
+                return origSwitch.apply(this, arguments);
+            };
+        }
+        var saved = localStorage.getItem('recolx_lang');
+        if (!saved) {
+            var nav = (navigator.language || 'en').toLowerCase();
+            saved = (nav.indexOf('ar') === 0) ? 'ar' : 'en';
+        }
+        if (saved && saved !== 'en' && typeof window.switchLang === 'function') {
+            window.switchLang(saved);
+        }
+    } catch(e) {}
+
+    /* dynamic copyright year */
+    document.querySelectorAll('.copyright p').forEach(function(p){
+        p.innerHTML = p.innerHTML.replace(/20\d{2}/, new Date().getFullYear());
+    });
+})();
+</script>
+<script>
+/* Reduce particle count on mobile for performance */
+(function(){
+    var origCreate = window.createParticles;
+    if (typeof origCreate !== 'function') return;
+    window.createParticles = function(){
+        if (window.innerWidth < 768) {
+            var style = document.createElement('style');
+            style.textContent = '.particle{display:none}';
+            document.head.appendChild(style);
+            return;
+        }
+        return origCreate.apply(this, arguments);
+    };
+})();
+</script>
+<script>
+function toggleFaq(q){
+    var item = q.parentElement;
+    var answer = item.querySelector('.faq-answer');
+    var isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item.active').forEach(function(i){
+        i.classList.remove('active');
+        i.querySelector('.faq-answer').style.maxHeight = null;
+    });
+    if(!isActive){
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+}
 </script>
 </body>
 </html>
