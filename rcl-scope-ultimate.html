@@ -537,6 +537,17 @@ img[src="rcl-scope-ultimate.png"] {
 @keyframes rxFloatImg { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
 
 </style>
+
+<!-- rx gif preview styles -->
+<style>
+.rx-gif-wrap {
+    max-width: 900px; margin: 40px auto 0; border-radius: 20px;
+    border: 1px solid rgba(0, 255, 136, .25); overflow: hidden;
+    box-shadow: 0 30px 80px -24px rgba(0, 255, 136, .22), 0 0 0 1px rgba(255, 255, 255, .05);
+    background: rgba(30, 30, 46, .5);
+}
+.rx-gif { display: block; width: 100%; height: auto; }
+</style>
 </head>
 <body>
 <div id="particles-container"></div>
@@ -599,6 +610,22 @@ img[src="rcl-scope-ultimate.png"] {
     <div class="hero-media">
     <div class="safety-strip" data-aos="fade-up" data-aos-delay="550"><i class="fas fa-shield-halved"></i><span data-i18n="safety.strip">100% Safe — No game files touched · No file injection · No spyware</span></div>
     <div class="hero-visual" data-aos="zoom-in" data-aos-delay="650"><img src="rcl-scope-ultimate.png" alt="RCL Scope Stabilizer ULTIMATE"></div>
+    </div>
+</section>
+
+
+<!-- LIVE GIF PREVIEW -->
+<section class="section" id="preview">
+    <div class="section-inner">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="rx.gif.title">Live Preview</h2>
+        <div class="gradient-line" data-aos="fade-up"></div>
+        <p class="section-subtitle" data-aos="fade-up" data-i18n="rx.gif.sub">See RCL Scope Stabilizer ULTIMATE in action</p>
+        <div class="rx-gif-wrap" data-aos="zoom-in">
+            <img class="rx-gif" src="rcl-scope-ultimate.gif"
+                 alt="RCL Scope Stabilizer ULTIMATE - Live Preview"
+                 loading="lazy"
+                 onerror="if(!this.dataset.f){this.dataset.f=1;this.src='RCL%20Scope%20Stabilizer%20ULTIMATE.gif';}else{var w=this.closest('.rx-gif-wrap');if(w)w.style.display='none';}">
+        </div>
     </div>
 </section>
 
@@ -743,8 +770,7 @@ img[src="rcl-scope-ultimate.png"] {
                 </div>
             </div>
             <div class="footer-col"><h4 data-i18n="footer.programs">Programs</h4><ul>
-                <li><a href="rcl-scope-pro.html">RCL Scope PRO</a></li><li><a href="rcl-scope-ultimate.html">RCL Scope ULTIMATE</a></li><li><a href="recolx-pro.html">RecolX Pro</a></li><li><a href="rcl-v9.html">RCL.V9</a></li><li><a href="rcl-system-monster.html">System Monster</a></li><li><a href="bundle.html">Bundle</a></li>
-            </ul></div>
+                <li><a href="rcl-scope-pro.html">RCL Scope PRO</a></li><li><a href="rcl-scope-ultimate.html">RCL Scope ULTIMATE</a></li><li><a href="recolx-pro.html">RecolX Pro</a></li><li><a href="rcl-v9.html">RCL.V9</a></li></ul></div>
             <div class="footer-col"><h4 data-i18n="footer.support">Support</h4><ul>
                 <li><a href="https://t.me/RecolXx" target="_blank" rel="noopener">Updates Channel</a></li><li><a href="index.html#videos">Video Tutorials</a></li><li><a href="index.html#features">Features</a></li>
             </ul></div>
@@ -863,6 +889,24 @@ AOS.init({duration:800,once:true});
         onScroll();
         btn.addEventListener('click', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+    if (typeof currentLang !== 'undefined' && typeof switchLang === 'function' && currentLang === 'ar') {
+        switchLang('ar');
+    }
+})();
+</script>
+
+<script>
+(function () {
+    if (typeof translations === 'object' && translations) {
+        Object.assign(translations.en, {
+            'rx.gif.title': 'Live Preview',
+            'rx.gif.sub': 'See RCL Scope Stabilizer ULTIMATE in action'
+        });
+        Object.assign(translations.ar, {
+            'rx.gif.title': '\u0645\u0639\u0627\u064a\u0646\u0629 \u062d\u064a\u0629',
+            'rx.gif.sub': '\u0634\u0627\u0647\u062f RCL Scope Stabilizer ULTIMATE \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0639\u0645\u0644'
         });
     }
     if (typeof currentLang !== 'undefined' && typeof switchLang === 'function' && currentLang === 'ar') {
